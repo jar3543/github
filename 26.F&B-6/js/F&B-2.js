@@ -159,11 +159,13 @@ $(function(){//시작
 
 
 
-   $('header.on::after').on('click',function(){
+   $('.gnb-nav').on('mouseenter',function(){
     // if($devWidth < $limitSize) return false;
     // $('.gnb-nav li ul').stop().fadeIn(500);
+    $('header').addClasee('on');
+  }).on($('.gnb-nav').on('mouseleave',function(){
     $('header').removeClass('on');
-  })
+  }))
 
 
 
