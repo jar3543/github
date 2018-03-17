@@ -1,3 +1,29 @@
+/* skill */
+.skill-img-wrap{width: 20%;}
+.skill-img-wrap img{width: 100%;}
+/* profile */
+ul.text-muted, .text-muted li{list-style-type: none;}
+.profile-text1{padding-right: 42px;}
+.profile-text2{padding-right: 30px;}
+/* 포트폴리오 */
+.gallery-box-content p{color: #fff;line-height: 0;}
+.gallery-box-content p:nth-of-type(1){padding-top: 10px;}
+
+/* footer */
+.pull-right{font-size: 25px;width: 100%;}
+footer .container-fluid .footer-textalign{text-align: center;}
+
+
+
+.contact-bg{
+  background: url(../assets/contact-post7.png) no-repeat center;
+  background-size: cover;
+}
+.contact-rgba{background-color: rgba(0,0,0,0.5);}
+.contact-rbga-padding{padding: 5%;}
+
+.glyphicon{color: #fff;font-size: 40px;width: 100%;}
+
 /*
 
 Landing Zero theme - A free landing page theme from BootstrapZero
@@ -54,6 +80,7 @@ p {
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
+    color: #000;
 }
 
 .wide-space {
@@ -66,12 +93,11 @@ p {
 }
 
 .bg-primary {
-    background-color: #333;
+    background-color: #fff;
 }
 
 .bg-dark {
     color: #eee;
-    background-color: #222;
 }
 
 .cursive {
@@ -80,7 +106,7 @@ p {
 }
 
 .text-faded {
-    color: rgba(245,245,245,0.7);
+    color: #000;
 }
 
 .text-dark {
@@ -88,7 +114,7 @@ p {
 }
 
 .text-primary {
-    color: #9c27b0;
+    color: #000;
 }
 
 .modal-content {
@@ -263,11 +289,11 @@ header .header-content .inner p {
 
 #video-background {
   position: absolute;
-  right: 0; 
+  right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
-  width: auto; 
+  width: auto;
   height: auto;
   z-index: 1;
 }
@@ -284,7 +310,7 @@ footer {
     .icon-lg {
         font-size: 80px;
     }
-    
+
     header {
         min-height: 100%;
     }
@@ -305,7 +331,7 @@ footer {
     }
 
     header .header-content .inner h1 {
-        font-size: 53px;
+        font-size: 80px;
     }
 
     header .header-content .inner p {
@@ -314,9 +340,9 @@ footer {
         max-width: 80%;
         font-size: 18px;
     }
-    
+
     section {
-        min-height: 600px;
+        /* min-height: 600px; */
         padding: 100px 0;
     }
 
@@ -330,7 +356,7 @@ footer {
     font-size: 14px;
     line-height: 1.5;
     color: #eee;
-    background-color: #36333d;
+    background-color: white;
     background-image: none;
     border: 1px solid #36333d;
     border-radius: 4px;
@@ -350,6 +376,7 @@ textarea {
 
 .margin-top-0 {
     margin-top: 0;
+    color: #000;
 }
 
 .feature {
@@ -484,6 +511,7 @@ fieldset[disabled] .btn-default.active {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    margin-bottom: 20px;
 }
 
 .btn.btn-primary:hover {
