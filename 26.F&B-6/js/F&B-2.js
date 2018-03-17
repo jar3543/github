@@ -156,15 +156,13 @@ $(function(){//시작
      // console.log('닫기');
    })
    // 모바일 토글메뉴 백그라운드
-   $('.gnb-nav').on('mouseenter',function(){
+
+
+
+   $('header.on::after').on('click',function(){
     // if($devWidth < $limitSize) return false;
     // $('.gnb-nav li ul').stop().fadeIn(500);
-    $('header').addClass('on');
-  }).on('mouseleave',function(){
-    // if($devWidth < $limitSize) return false;
-    // $('.gnb-nav li ul').stop().fadeOut(200);
     $('header').removeClass('on');
-    console.log('백그라운드');
   })
 
 
