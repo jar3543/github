@@ -22,20 +22,8 @@
         event.preventDefault();
     });
 
-    // $('.navbar-collapse ul li a').click(function() {
-    //     /* always close responsive nav after click */
-    //     $('.navbar-toggle:visible').click();
-    // });
-
-    // $('#galleryModal').on('show.bs.modal', function (e) {
-    //    $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
-    // });
-    //포트폴리오 사이트 링크걸기
-
-    $('glyphicon.glyphicon-link').on('click',function(){
-      location.href='F&B-010000.html';
-      console.log('open');
-    });
-
+    $(document).ready(function(){
+      $('.header-content-bg').fadeOut(5000);
+    })
 
 })(jQuery);

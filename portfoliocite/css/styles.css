@@ -68,7 +68,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #9c27c1;
+    color: #e0ca69;
     outline: 0;
 }
 
@@ -148,7 +148,7 @@ footer {
 
 .navbar-header > .navbar-brand {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
-    color: #9c27b0;
+    color: #e0ca69;
     padding: 15px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
@@ -157,7 +157,7 @@ footer {
 
 .navbar-header > .navbar-brand:hover,
 .navbar-header > .navbar-brand:focus {
-    color: #8b27b0;
+    color: #e0ca69;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -177,12 +177,12 @@ footer {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #9c27b0;
+    color: #e0ca69 !important;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #9c27b0 !important;
+    color: #e0ca69 !important;
     background-color: transparent;
 }
 
@@ -195,8 +195,7 @@ footer {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: transparent;
-        background-color: transparent;
+        border-color: transparent;        
         min-height: 60px;
     }
 
@@ -230,14 +229,14 @@ footer {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 15px;
-        color: #9c27b0;
+        color: #e0ca69;
         padding: 20px;
         letter-spacing: 1px;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #8b27b0;
+        color: #e0ca69;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -248,7 +247,7 @@ footer {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #9c27b0;
+        color: #e0ca69;
     }
 }
 
@@ -258,13 +257,13 @@ header {
     text-align: center;
     color: #fff;
     width: 100%;
-    background-color: #c9c9c9;
-    background-image: url('https://splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-Slate-Stone-Xeromatic-1440x953.jpg');
+    background-image: url('../assets/mainimg.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    transition-delay: 1s;
 }
 
 header .header-content {
@@ -285,6 +284,14 @@ header .header-content .inner p {
     font-size: 16px;
     font-weight: 300;
     color: rgba(255,255,255,0.7);
+}
+.header-content-bg{
+  background-color: rgba(0,0,0,0.9);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #video-background {
