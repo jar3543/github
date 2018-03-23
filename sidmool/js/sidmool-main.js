@@ -120,6 +120,6 @@ $(function(){
 
   // 상세페이지로 링크
   $('.swiper-slide img').on('click',function(){
-    location.href="sub.html";
+    location.href="https://jar3543.github.io/github/sidmool/sub.html";
   })
 })//종료
