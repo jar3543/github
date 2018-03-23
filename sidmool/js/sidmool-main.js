@@ -117,9 +117,4 @@ $(function(){
     //내가 클릭한 a의 부모인 h2의 바로 다음에 오는 items를 보여준다.
     $(this).parent().next().show();
   })
-
-  // 상세페이지로 링크
-  $('.swiper-slide img').on('click',function(){
-    location.href="https://jar3543.github.io/github/sidmool/sub.html";
-  })
 })//종료
