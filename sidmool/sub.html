@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <!-- 부트스트랩 -->
+    <title>sidmool sub</title>
+    <!-- 폰텔로 -->
+    <link rel="stylesheet" href="css/fontello-codes.css">
+    <!-- 부트스트랩 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 공통 -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sub.js"></script>
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 상세페이지 네비게이션 jquery, jquery ui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1><img src="images/top_logo.png" alt="logo 이미지"></h1>
+      <!-- 통합검색 -->
+      <div class="search">
+        <input type="checkbox" id="btn-search-open">
+        <label for="btn-search-open" class="btn-search-open" title="통합검색">
+          <form action="#" class="form-wrap">
+            <input for="btn-label" class="search-input" type="text" placeholder="찾으시는 제품을 입력하세요." title="통합검색">
+            <i class="icon icon-search" aria-hidden="true"></i>
+            <button type="submit" id="btn-label">검색</button>
+            <label for="btn-label" class="skip">버튼과 라벨 연결</label>
+          </form>
+        </label>
+      </div>
+      <!-- 검색 end -->
+
+      <!-- 네비게이션 start -->
+      <nav>
+        <div class="bgwrap">
+          <div class="wrap">
+            <div class="nav">
+              <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>BRAND</span><span class="ko">브랜드</span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">시드물 개요/연혁/비전</a></li>
+                  <li><a href="#">시드물 소개/나눔과 실천</a></li>
+                  <li><a href="#">개발 & 품질관리</a></li>
+                  <li><a href="#">오시는 길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>ITEM</span><span class="ko">제품</span></a>
+                <ul class="dropdown-menu submenu-all" role="menu">
+                  <li><a href="#" class="test">전체보기<span class="caret"></span></a>
+                    <ul role="menu" class="menu">
+                      <li><a href="#">신제품</a></li>
+                      <li><a href="#">클렌징</a></li>
+                      <li><a href="#">수제비누</a></li>
+                      <li><a href="#">수분크림</a></li>
+                      <li><a href="#">앰플</a></li>
+                      <li><a href="#">에센스세럼</a></li>
+                      <li><a href="#">수분젤</a></li>
+                      <li><a href="#">로션</a></li>
+                      <li><a href="#">크림</a></li>
+                      <li><a href="#">썬스크린</a></li>
+                      <li><a href="#">무기자차</a></li>
+                      <li><a href="#">각질관리</a></li>
+                      <li><a href="#">마스크팩</a></li>
+                      <li><a href="#">바디</a></li>
+                      <li><a href="#">색조</a></li>
+                      <li><a href="#">립 & 아이케어</a></li>
+                      <li><a href="#">페이스 & 바디오일</a></li>
+                      <li><a href="#">스킨토너미스트</a></li>
+                      <li><a href="#">스킨케어브러쉬</a></li>
+                      <li><a href="#">헤어</a></li>
+                      <li><a href="#">화장소품</a></li>
+                      <li><a href="#">건강식품</a></li>
+                      <li><a href="#">임산부추천</a></li>
+                      <li><a href="#">우리아기추천</a></li>
+                      <li><a href="#">청소년화장품추천</a></li>
+                      <li><a href="#">세트할인</a></li>
+                      <li><a href="#">남성용화장품</a></li>
+                      <li><a href="#">민중기시리즈</a></li>
+                      <li><a href="#">이벤트</a></li>
+                      <li><a href="#">세탁용품</a></li>
+                      <!-- 성분라인별 -->
+                      <li><a href="#">달팽이</a></li>
+                      <li><a href="#">알로에</a></li>
+                      <li><a href="#">봉독</a></li>
+                      <li><a href="#">바하</a></li>
+                      <li><a href="#">아하</a></li>
+                      <li><a href="#">녹차(EGCG)</a></li>
+                      <li><a href="#">카렌듈라</a></li>
+                      <li><a href="#">아크바이</a></li>
+                      <li><a href="#">레드큐어</a></li>
+                      <li><a href="#">천연오일</a></li>
+                      <li><a href="#">메가펩타이드</a></li>
+                      <li><a href="#">콜라겐</a></li>
+                      <li><a href="#">호호바</a></li>
+                      <li><a href="#">휴먼올리고</a></li>
+                      <li><a href="#">뷰리즈</a></li>
+                      <li><a href="#">EGF</a></li>
+                      <li><a href="#">프로폴리스</a></li>
+                      <li><a href="#">히아루론산</a></li>
+                      <li><a href="#">세라마이드</a></li>
+                      <li><a href="#">티트리</a></li>
+                      <li><a href="#">아스타잔틴</a></li>
+                      <li><a href="#">사카로발효</a></li>
+                      <li><a href="#">닥터트럽</a></li>
+                      <li><a href="#">병풀</a></li>
+                      <li><a href="#">징크</a></li>
+                      <li><a href="#">동백</a></li>
+                      <li><a href="#">스킨소스</a></li>
+                      <li><a href="#">판테놀</a></li>
+                      <li><a href="#">닥터갈라톡</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="test">기능별<span class="caret"></span></a>
+                    <ul role="menu" class="menu">
+                      <li><a href="#">신제품</a></li>
+                      <li><a href="#">클렌징</a></li>
+                      <li><a href="#">수제비누</a></li>
+                      <li><a href="#">수분크림</a></li>
+                      <li><a href="#">앰플</a></li>
+                      <li><a href="#">에센스세럼</a></li>
+                      <li><a href="#">수분젤</a></li>
+                      <li><a href="#">로션</a></li>
+                      <li><a href="#">크림</a></li>
+                      <li><a href="#">썬스크린</a></li>
+                      <li><a href="#">무기자차</a></li>
+                      <li><a href="#">각질관리</a></li>
+                      <li><a href="#">마스크팩</a></li>
+                      <li><a href="#">바디</a></li>
+                      <li><a href="#">색조</a></li>
+                      <li><a href="#">립 & 아이케어</a></li>
+                      <li><a href="#">페이스 & 바디오일</a></li>
+                      <li><a href="#">스킨토너미스트</a></li>
+                      <li><a href="#">스킨케어브러쉬</a></li>
+                      <li><a href="#">헤어</a></li>
+                      <li><a href="#">화장소품</a></li>
+                      <li><a href="#">건강식품</a></li>
+                      <li><a href="#">임산부추천</a></li>
+                      <li><a href="#">우리아기추천</a></li>
+                      <li><a href="#">청소년화장품추천</a></li>
+                      <li><a href="#">세트할인</a></li>
+                      <li><a href="#">남성용화장품</a></li>
+                      <li><a href="#">민중기시리즈</a></li>
+                      <li><a href="#">이벤트</a></li>
+                      <li><a href="#">세탁용품</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="test">성분라인별<span class="caret"></span></a>
+                    <ul role="menu" class="menu">
+                      <li><a href="#">달팽이</a></li>
+                      <li><a href="#">알로에</a></li>
+                      <li><a href="#">봉독</a></li>
+                      <li><a href="#">바하</a></li>
+                      <li><a href="#">아하</a></li>
+                      <li><a href="#">녹차(EGCG)</a></li>
+                      <li><a href="#">카렌듈라</a></li>
+                      <li><a href="#">아크바이</a></li>
+                      <li><a href="#">레드큐어</a></li>
+                      <li><a href="#">천연오일</a></li>
+                      <li><a href="#">메가펩타이드</a></li>
+                      <li><a href="#">콜라겐</a></li>
+                      <li><a href="#">호호바</a></li>
+                      <li><a href="#">휴먼올리고</a></li>
+                      <li><a href="#">뷰리즈</a></li>
+                      <li><a href="#">EGF</a></li>
+                      <li><a href="#">프로폴리스</a></li>
+                      <li><a href="#">히아루론산</a></li>
+                      <li><a href="#">세라마이드</a></li>
+                      <li><a href="#">티트리</a></li>
+                      <li><a href="#">아스타잔틴</a></li>
+                      <li><a href="#">사카로발효</a></li>
+                      <li><a href="#">닥터트럽</a></li>
+                      <li><a href="#">병풀</a></li>
+                      <li><a href="#">징크</a></li>
+                      <li><a href="#">동백</a></li>
+                      <li><a href="#">스킨소스</a></li>
+                      <li><a href="#">판테놀</a></li>
+                      <li><a href="#">닥터갈라톡</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="test">고민별<span class="caret"></span></a>
+                    <ul role="menu" class="menu">
+                      <li><a href="#">AC스팟</a></li>
+                      <li><a href="#">건성피부</a></li>
+                      <li><a href="#">복합성피부</a></li>
+                      <li><a href="#">민감성피부</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="test">내츄럴99<span class="caret"></span></a>
+                    <ul role="menu" class="menu">
+                      <li><a href="#">지성피부</a></li>
+                      <li><a href="#">건성피부</a></li>
+                      <li><a href="#">복합성피부</a></li>
+                      <li><a href="#">민감성피부</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>RIVIEW</span><span class="ko">리뷰</span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">포토후기</a></li>
+                  <li><a href="#">사용후기</a></li>
+                </ul>
+              </li>
+              <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>RECOMMEND</span><span class="ko">추천제품</span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">전 어떻게 써요?</a></li>
+                <li><a href="#">성분사전</a></li>
+              </ul>
+              </li>
+              <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>COMMUNITY</span><span class="ko">커뮤니티</span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">시드물 통신</a></li>
+                <li><a href="#">시사모 자유게시판</a></li>
+              </ul>
+              </li>
+              <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>CS CENTER</span><span class="ko">공지사항</span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">1:1문의게시판</a></li>
+                  <li><a href="#">미확인 입금자</a></li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- 네비게이션 end -->
+
+      <!-- quick bar 토글 메뉴 -->
+      <div class="quickbar">
+        <button id="btn-menu" class="btn-menu icon icon-menu">
+          <span class="skip">토글메뉴</span>
+        </button>
+        <!-- quick bar menu -->
+        <ul class="btn-nav">
+          <li>
+            <a href="#tab1">
+              <span>Quick Menu</span>
+            </a>
+            <ul class="box active menulist">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="#">주문조회</a></li>
+              <li><a href="#">마이페이지</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#tab1">
+              <span>CS Center</span>
+            </a>
+            <ul class="box active q-center">
+              <li><a href="#">자주묻는 질문</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">1:1문의</a></li>
+              <li><a href="#">포토후기</a></li>
+              <li><a href="#">출석체크</a></li>
+              <li><a href="#">시드물 매니아</a></li>
+              <li><a href="#">모든 제품보기</a></li>
+              <li><a href="#">신제품보기</a></li>
+              <li><a href="#">동영상게시판</a></li>
+              <li><a href="#">해외배송</a></li>
+              <li><a href="#">배송조회</a></li>
+              <li><a href="#">등급별 할인</a></li>
+              <li><a href="#">사은품</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#tab1">
+              <span>Recommend</span>
+              <!-- <span class="ko">추천제품</span> -->
+            </a>
+            <ul class="box active q-recommend">
+              <li><a href="#">시리즈모음</a></li>
+              <li><a href="#">제품가격별</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- quick bar end -->
+    </header>
+    <!-- header end -->
+
+    <!-- sub page(상세페이지) contents start -->
+    <section>
+      <div class="center">
+        <!-- 상세 페이지 네비게이션 button-->
+        <div class="btn-group">
+          <button id="box1">제품상세정보</button>
+          <button id="box2" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">배송정보</button>
+          <button id="box3">제품리뷰</button>
+          <button id="box4">제품문의</button>
+        </div>
+        <!-- 상세 페이지 메인 -->
+        <div class="sub-main">
+          <div class="location">
+            <span>
+              <a href="#">HOME</a>
+              <span class="icon icon-right-open"></span>
+            </span>
+            <span>
+              <a href="#">베스트상품</a>
+              <span class="icon icon-right-open"></span>
+            </span>
+            <span>
+              <a href="#">사카로 앰플</a>
+            </span>
+          </div>
+          <div class="main-img-info">
+            <div class="wrap">
+              <img src="images/sub-main-img.jpg" alt="상세페이지 메인 제품 이미지">
+              <div class="buy_box">
+                <div class="prd_title">
+                  <h2>사카로 광채 앰플 100ml</h2>
+                  <p>37% 할인 이벤트 중 명품 발효 성분 광채/리뉴얼/보습</p>
+                </div>
+                <div class="clfix">
+                  <p><a href="#">효모광채</a></p>
+                  <p><a href="#">광채</a></p>
+                  <p><a href="#">적립금정책</a></p>
+                  <p><a href="#">등급별혜택</a></p>
+                </div>
+                <div class="price">
+                  <div class="ori">
+                    <p class="title">정상가</p>
+                    <p class="price">₩ 49,000</p>
+                  </div>
+                  <div class="sale">
+                    <p class="title">판매가격</p>
+                    <p class="price">₩ 30,870</p>
+                  </div>
+                </div>
+                <div class="option-area">
+                  <div>
+                    <p class="title">적립금</p>
+                    <p class="info">2%</p>
+                  </div>
+                  <div>
+                    <p class="title">원산지</p>
+                    <p class="info">국내산</p>
+                  </div>
+                  <div>
+                    <p class="title">브랜드</p>
+                    <p class="info">시드물</p>
+                  </div>
+                  <div>
+                    <p class="title">용량</p>
+                    <p class="info">100ml</p>
+                  </div>
+                </div>
+                <div class="option_box">
+
+                </div>
+                <div class="button-wrap">
+                  <a href="#"><span>바로구매</span></a>
+                  <a href="#"><span>장바구니</span></a>
+                  <a href="#"><span>위시리스트</span></a>
+                </div>
+                <div class="sub-sns">
+                  <a href="#"><span class="icon icon-facebook-rect"></span></a>
+                  <a href="#"><span class="icon icon-twitter-bird"></span></a>
+                  <a href="#"><span>URL</span></a>
+                </div>
+                <div class="etc-info-albtn">
+                  <dl>
+                    <dt>배송공지</dt>
+                    <dd>시드물에서는 빠른 배송을 위해
+                        월요일 오전10시, 화~금 낮1시, 토요일 오전9시까지
+                        입금 완료된 주문에 한해 당일 발송을 해드리고 있습니다.
+                        공휴일, 국경일, 연휴, 주말 이후 월~화요일,
+                        주문량이 증가하는 경우는 정해진 일정보다 1~2일
+                        늦어질 수 있습니다. 불편을 드려 죄송합니다.</dd>
+                  </dl>
+                  <button>제품 추천 Al [테스트버전]</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 관련상품 -->
+        <div id="product">
+          <h2>관련상품</h2>
+          <ul>
+            <li>
+              <div class="wrap">
+                <img src="images/sub-product1.jpg" alt="민중기 FGF 앰플 30ml">
+                <dl>
+                  <dt>민중기 FGF 앰플 30ml</dt>
+                  <dd>₩ 27,900</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <div class="wrap">
+                <img src="images/sub-product2.jpg" alt="사카로 광채 탄력 크림 80g">
+                <dl>
+                  <dt>사카로 광채 탄력 크림 80g</dt>
+                  <dd>₩ 31,200</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <div class="wrap">
+                <img src="images/sub-product3.jpg" alt="닥터트럽 알 파이브 스팟 화이트닝 크림 30ml">
+                <dl>
+                  <dt>닥터트럽 알 파이브 스팟 화이트닝 크림 30ml</dt>
+                  <dd>₩ 16,800</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <div class="wrap">
+                <img src="images/sub-product4.jpg" alt="의약품흡수유도피부자극기">
+                <dl>
+                  <dt>의약품흡수유도피부자극기</dt>
+                  <dd>₩ 25,000</dd>
+                </dl>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 상세 페이지 네비게이션 컨텐츠 -->
+        <!-- 제품상세정보 -->
+        <div class="box1">
+          <img src="images/sub-box1-img1.jpg" alt="제시드물 신제품,소식 이미지">
+          <img src="images/sub-box1-img2.jpg" alt="시드물 화장품 개봉후 사용기간 이미지">
+          <img src="images/sub-box1-img3.jpg" alt="다른 제품과 비교 이미지">
+          <img src="images/sub-box1-img4.jpg" alt="제품상세정보 이미지">
+          <img src="images/sub-box1-img5.jpg" alt="공인기관에서 인증한 (주)시드물 이미지">
+        </div>
+        <!-- 배송정보 -->
+        <div class="box2">
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">배송정보</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="images/sub-box2-img.jpg" alt="배송정보 이미지">
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">닫기</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 제품리뷰 -->
+        <div class="box3">제품리뷰</div>
+        <!-- 제품문의 -->
+        <div class="box4">제품문의</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <!-- center end -->
+    </section>
+    <!-- section end -->
+
+
+    <!-- sub page(상세페이지) contents end -->
+
+    <!-- 배너 -->
+    <div class="banner">
+      <div class="banner-wrap">
+        <img src="images/bottom_banner1.jpg" alt="배너 이미지">
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="citemap">
+        <span class="skip">사이트맵</span>
+        <ul class="sub-citemap">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <ul class="sns">
+          <li>
+            <button class="icon icon-blogger-rect"></button>
+          </li>
+          <li>
+            <button class="icon icon-facebook-rect"></button>
+          </li>
+          <li>
+            <button class="icon icon-twitter-bird"></button>
+          </li>
+          <li>
+            <button class="icon icon-youtube-play"></button>
+          </li>
+        </ul>
+        <p>대전 광역시 중구 안영로 42(안영동)
+          T 1577-9638(해외 : +82-42-716-0227) / F 042-367-7989<br>
+          사업자등록번호:305-81-94469 / 건강기능식품판매업:대전 중구 503
+          통신판매업신고번호:제2008-대전중구-0247호<br>
+          화장품 제조판매업 등록필증 제 1163
+          서비스개선:help@sidmool.com 대표:민원기 개인정보관리자:나종민</p>
+        <small>copyright&copy; 2008 SIDMOOL. All right reservd.</small>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script>
+    //네비게이션 포커스인/포커스아웃
+    $('nav .bgwrap .wrap .nav li a').on('focusin',function(){
+      $(this).next().show();
+    $('nav .bgwrap .wrap .nav li a').on('focusout',function(){
+      $(this).next().hide();
+    })
+  })
+
+    // quick bar
+    $('.icon.icon-menu').on('click',function(){
+      $('header').toggleClass('on');
+      $(this).toggleClass('icon-menu icon-cancel');
+    })
+
+    $('.btn-nav li a').click(function(e){
+      e.preventDefault();
+      $(this).next().slideToggle();
+    })
+
+    </script>
+
+  </body>
+</html>

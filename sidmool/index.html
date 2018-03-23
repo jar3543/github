@@ -5,7 +5,7 @@
     <!-- 부트스트랩 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sidmool</title>
+    <title>sidmool main</title>
     <!-- css -->
     <!-- fontello-codes.css -->
     <link rel="stylesheet" href="css/fontello-codes.css">
@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- 공통 -->
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/nature4.css">
+    <link rel="stylesheet" href="css/sidmool-main.css">
     <!-- script -->
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/sidmool-main.js"></script>
     <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -217,7 +217,7 @@
                 </ul>
               </li>
               <li>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>RECOMMEND</span><span class="ko">커뮤니티</span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span>RECOMMEND</span><span class="ko">추천제품</span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">전 어떻게 써요?</a></li>
                 <li><a href="#">성분사전</a></li>
@@ -684,14 +684,6 @@
         $('#roll').attr('src','images/daily_'+roll+'.jpg');
       },2000);
     })
-    //데일리 포커스인/포커스아웃
-    $('.daily').on('focusin',function(){
-      $('.daily #roll').show();
-    $('.daily img').on('focusout',function(){
-      $('.daily #roll').hide();
-    })
-  })
-
     </script>
 
   </body>
