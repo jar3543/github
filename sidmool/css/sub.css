@@ -336,7 +336,7 @@ section .center{width: 720px;padding-left: 10px;}
 .buy_box .button-wrap a:nth-child(1):hover{background: #000;color: #fff;}
 .buy_box .button-wrap a:nth-child(2){padding: 14px 14px 14px 19px;}
 .buy_box .button-wrap a:last-child{
-  width: 95px;
+  width: 100px;
 }
 .buy_box .sub-sns a{
   position: relative;
