@@ -261,39 +261,102 @@ button.icon-cancel{
 
 /* section ==============================================================*/
 section{height: 3000px;margin: auto;}
-section .center{width: 1100px;}
+section .center{width: 720px;padding-left: 10px;}
+/* 상세 페이지 네비게이션 button */
 .btn-group{
   position: absolute;
   top:-14px;
-  width: 1100px;
+  width: 100%;
   height: 43px;
-  background: #efefef;
+  border-bottom: 1px solid #000;
 }
 .btn-group button{
-  font-size: 16px;padding: 0 192px 0 40px;
+  font-size: 16px;padding: 12px 33px 0 40px;
+  outline-style: none;
+  line-height: 0;
+  vertical-align: middle;
 }
-/* .btn-group #box1{padding-left: 0;} */
+.btn-group-vertical>.btn, .btn-group>.btn{
+  float: none;background: none;
+  color: #000;
+  border: 0;
+}
+.btn-group button#btn-modal{outline-style: none;}
 .btn-group #box2{
-  background-color: #efefef;
   border-color: #efefef;
   color: #000;
   float: none;
+  outline-style: none;
 }
 .btn-group #box3{}
 .btn-group #box4{padding-right: 0;}
-.box1{height: 600px;}
-.box2{height: 600px;}
+.box1{height: 7764px;}
 .box3{height: 600px;}
 .box4{height: 600px;}
-.box1{background: #08d7ac; margin-top: 50px;}
-.box2{background: #1d8c75;}
-.box3{background: #142823;}
-.box4{background: #142823;}
+.box1{background: none; margin-top: 50px;}
+.box2{background: none;}
+.box3{background: none;}
+.box4{background: none;}
+/* 상세 페이지 메인 */
+.sub-main{
+  padding-top: 38px;
+  width: 720px;
+  margin: auto;
+  padding-left: 50px;
+}
+.main-img-info{}
+.main-img-info .wrap img{float: left;}
+.sub-main .clfix p{float: left;}
+.sub-main .clfix p a{color: #a19999;text-decoration: none;}
+.sub-main .clfix p:nth-child(3) a{color: red;font-weight: bold;border: 1px dashed #000;}
+.sub-main .clfix p:nth-child(4) a{color: red;font-weight: bold;border: 1px dashed #000;}
+.sub-main .clfix p:last-child{float: none;}
+.buy_box{
+  width: 370px;
+  float: right;
+  padding-left: 10px;
+}
+.buy_box .price .ori{display: inline-block;}
+.buy_box .price .sale{display: inline-block;}
+.buy_box .price .ori p{display: inline-block;vertical-align: middle;}
+.buy_box .price .sale p{display: inline-block;vertical-align: middle;}
+.buy_box .option-area div p{display: inline-block;vertical-align: middle;}
+.buy_box p.title{font-weight: bold;}
+.buy_box p.price{}
+.buy_box .button-wrap a{
+  width: 95px;
+  height: 52px;
+  display: inline-block;
+  padding: 14px 14px 14px 13px;
+  border: 1px solid #000;
+  color: #000;
+}
+.buy_box .button-wrap a:hover{color: #fff;background: #000;text-decoration: none;}
+.buy_box .button-wrap a:nth-child(1){border: 0;padding: 14px 14px 14px 17px;background: #828680;color: #fff;}
+.buy_box .button-wrap a:nth-child(1):hover{background: #000;color: #fff;}
+.buy_box .button-wrap a:nth-child(2){padding: 14px 14px 14px 19px;}
+.buy_box .button-wrap a:last-child{
+  width: 95px;
+}
+.buy_box .sub-sns a{
+  position: relative;
+  display: inline-block;
+  width: 42px;height: 42px;
+  border: 1px solid #585454;}
+.buy_box .sub-sns a span{
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #585454;
+}
+.buy_box .sub-sns a:last-child span{left: 2px;}
 /* 관련상품 */
-#product{}
+#product{clear: both;}
 section .center #product h2{font-size: 30px;}
 #product ul{overflow: hidden; margin:0 -5px;}
-#product ul li{float: left; width: 20%;}
+#product ul li{float: left; width: 25%;}
 #product ul li:hover .wrap{border:1px solid #555;}
 #product .wrap{
   position: relative;
@@ -320,8 +383,15 @@ box-shadow: none;}
 .modal-header .close{margin-top: -12px;}
 .close{font-size: 43px;opacity: 1;}
 .close:hover{opacity: 1;}
-
-
+/* 리뷰보기 */
+.table>thead>tr>th{border-bottom: none;}
+/* 리뷰,문의 공통 */
+.dotted-box{border-bottom: 1px dashed;}
+.btn-black{width: 100px;height: 45px;background: #000;color: #fff;border: 0;outline-style: none;}
+.btn-white{width: 100px;height: 45px;background: #fff;color: #000;border: 1px solid #000;outline-style: none;}
+.box3 button, .box4 button{
+  float: right;
+  margin-right: 5px;}
 
 
 
@@ -331,7 +401,7 @@ box-shadow: none;}
 
 /* footer =============================================================*/
 /* 배너 */
-.banner{padding: 50px 0 0;}
+.banner{padding: 7000px 0 0;}
 .banner-wrap{width: 925px;margin: auto;background: #e2dfdf;}
 .banner-wrap img{}
 
