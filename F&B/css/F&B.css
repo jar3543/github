@@ -569,8 +569,7 @@ footer p{padding: 440px 0 0 20px;font-size: 10px;}
     width:100%; margin: auto;
     display: block;
   }
-  #main-accordion ul{
-  }
+  #main-accordion ul{max-width: 720px;}
   #main-accordion ul > li{
   }
   #main-accordion ul > li:last-child{
