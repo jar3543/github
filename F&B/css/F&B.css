@@ -702,7 +702,6 @@ footer .sns li button.icon-pinterest-circled:hover{color: #bd081b;}
   header .center .gnb-nav .nav-bg{width: 100%;left: auto;}
   header .center #btn-login button.icon{padding-top: 20px;}
   header #btn-login{position: absolute;top: 0;right: 0px;height: 0px;}
-  /* .icon.icon-heart span, #btn-login .textchange{display: none;} */
   /* 하트, 쇼핑백 아이콘 */
   .icon.icon-heart::before, .icon-shopping-bag::before{font-size: 20px;}
 
