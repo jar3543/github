@@ -38,12 +38,10 @@ $(function(){//시작
   // 쇼핑백 팝업 열기
   $('.icon.icon-shopping-bag').on('click',function(){
     $('.popup-icon-shop, .icon.icon-cancel').show();
-    console.log('open');
   })
   // 쇼핑백 팝업 닫기
   $('.icon.icon-cancel').on('click',function(){
     $('.popup-icon-shop, .icon.icon-cancel').hide();
-    console.log('close');
   })
 
   // 로그아웃 화면
@@ -67,24 +65,6 @@ $(function(){//시작
     e.preventDefault();
     $(this).next().slideToggle();
   })
-  //모바일 푸터 아코디언
-  // var $devWidth;
-  // var $limitSize=767;
-  // $(window).resize(function(){
-  //   $devWidth=$('body').width();
-  //   if($devWidth<$limitSize){
-  //     $('#accordion .tab1').on('click', function(e){
-  //       e.preventDefault();
-  //       //모바일
-  //       $(this).next().stop().slideToggle();
-  //     })
-  //   }else{
-  //     $('#accordion .tab1').on('click', function(e){
-  //       e.preventDefault();
-  //       $(this).next().css('display','block');
-  //     })
-  //   }
-  // }).resize();
 
   $('#accordion .tab1').on('click', function(e){
     e.preventDefault();
@@ -97,10 +77,8 @@ $(function(){//시작
 
   // 모바일 토글메뉴
    $('#btn-menu').on('click',function(){
-     console.log('click');
      $('header').toggleClass('on');
      $('#btn-menu i').toggleClass('icon-menu-1 icon-cancel');
    })
-
 
 })//종료
