@@ -68,23 +68,32 @@ $(function(){//시작
     $(this).next().slideToggle();
   })
   //모바일 푸터 아코디언
-  var $devWidth;
-  var $limitSize=767;
-  $(window).resize(function(){
-    $devWidth=$('body').width();
-    if($devWidth<$limitSize){
-      $('#accordion .tab1').on('click', function(e){
-        e.preventDefault();
-        //모바일
-        $(this).next().stop().slideToggle();
-      })
-    }else{
-      $('#accordion .tab1').on('click', function(e){
-        e.preventDefault();
-        $(this).next().css('display','block');
-      })
-    }
-  }).resize();
+  // var $devWidth;
+  // var $limitSize=767;
+  // $(window).resize(function(){
+  //   $devWidth=$('body').width();
+  //   if($devWidth<$limitSize){
+  //     $('#accordion .tab1').on('click', function(e){
+  //       e.preventDefault();
+  //       //모바일
+  //       $(this).next().stop().slideToggle();
+  //     })
+  //   }else{
+  //     $('#accordion .tab1').on('click', function(e){
+  //       e.preventDefault();
+  //       $(this).next().css('display','block');
+  //     })
+  //   }
+  // }).resize();
+
+  $('#accordion .tab1').on('click', function(e){
+    e.preventDefault();
+    $('#accordion .category .fnaviaccodi1').slideToggle();
+  })
+  $('#accordion .tab2').on('click', function(e){
+    e.preventDefault();
+    $('#accordion .customer .fnaviaccodi2').slideToggle();
+  })
 
   // 모바일 토글메뉴
    $('#btn-menu').on('click',function(){
