@@ -1,5 +1,8 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+public function queue_font_css(){
+wp_enqueue_style('ex-hangulfont-'. $this->main->getEng(), 'https://fonts.googleapis.com/earlyaccess/'.strtolower($this->main->getEng()).'.css');
+}
 /* fontello */
 /*재설정: 각 파일 경로 지정해주기================================*/
 @font-face {
