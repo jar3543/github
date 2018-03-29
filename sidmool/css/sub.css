@@ -305,27 +305,33 @@ section .center{width: 720px;padding-left: 10px;}
   margin: auto;
   padding-left: 50px;
 }
+.sub-main .location span a{color: #000;}
 .main-img-info{}
-.main-img-info .wrap img{float: left;}
+.main-img-info .wrap img{float: left;padding-top: 25px;}
 .sub-main .clfix p{float: left;}
+.sub-main .clfix p:nth-child(3){padding: 0 10px;}
 .sub-main .clfix p a{color: #a19999;text-decoration: none;}
-.sub-main .clfix p:nth-child(3) a{color: red;font-weight: bold;border: 1px dashed #000;}
-.sub-main .clfix p:nth-child(4) a{color: red;font-weight: bold;border: 1px dashed #000;}
+.sub-main .clfix p:nth-child(3) a{padding: 5px;color: red;font-weight: bold;border: 1px dashed #000;background: #fdf098;}
+.sub-main .clfix p:nth-child(4) a{padding: 5px;color: red;font-weight: bold;border: 1px dashed #000;background: #fdf098;}
 .sub-main .clfix p:last-child{float: none;}
 .buy_box{
   width: 370px;
   float: right;
-  padding-left: 10px;
-}
+  padding-left: 10px;}
+.buy_box div.price{padding-top: 20px;}
 .buy_box .price .ori{display: inline-block;}
 .buy_box .price .sale{display: inline-block;}
 .buy_box .price .ori p{display: inline-block;vertical-align: middle;}
 .buy_box .price .sale p{display: inline-block;vertical-align: middle;}
+.buy_box .price .sale .price{font-size: 30px;color: red;}
+.buy_box .option-area div{display: inline-block;}
+.buy_box .option-area div:nth-child(2){padding-right: 115px;}
 .buy_box .option-area div p{display: inline-block;vertical-align: middle;}
 .buy_box p.title{font-weight: bold;}
 .buy_box p.price{}
+.buy_box .button-wrap{padding: 17px 0 20px 0;}
 .buy_box .button-wrap a{
-  width: 95px;
+  width: 88px;
   height: 52px;
   display: inline-block;
   padding: 14px 14px 14px 13px;
@@ -333,18 +339,25 @@ section .center{width: 720px;padding-left: 10px;}
   color: #000;
 }
 .buy_box .button-wrap a:hover{color: #fff;background: #000;text-decoration: none;}
-.buy_box .button-wrap a:nth-child(1){border: 0;padding: 14px 14px 14px 17px;background: #828680;color: #fff;}
-.buy_box .button-wrap a:nth-child(1):hover{background: #000;color: #fff;}
-.buy_box .button-wrap a:nth-child(2){padding: 14px 14px 14px 19px;}
-.buy_box .button-wrap a:last-child{
-  width: 100px;
+.buy_box .button-wrap a:nth-child(1){
+  border: 0;padding: 14px 14px 14px 28px;background: #828680;color: #fff;
+  margin-right: 10px;width: 120px;
 }
-.buy_box .sub-sns a{
+.buy_box .button-wrap a:nth-child(1):hover{background: #000;color: #fff;}
+.buy_box .button-wrap a:nth-child(2){padding: 14px 14px 14px 19px;
+  margin-right: 10px;}
+.buy_box .button-wrap a:last-child{
+  width: 100px;  margin-right: 10px;
+}
+.main-img-info .sub-sns{display: inline-block;padding: 50px 0 0 102px;}
+.main-img-info .sub-sns a{
   position: relative;
   display: inline-block;
   width: 42px;height: 42px;
-  border: 1px solid #585454;}
-.buy_box .sub-sns a span{
+  border: 1px solid #585454;
+  margin-right: 10px;
+}
+.main-img-info .sub-sns a span{
   position: absolute;
   left: 10px;
   top: 5px;
@@ -352,7 +365,12 @@ section .center{width: 720px;padding-left: 10px;}
   text-decoration: none;
   color: #585454;
 }
-.buy_box .sub-sns a:last-child span{left: 2px;}
+.main-img-info .sub-sns a:last-child span{left: 2px;}
+.main-img-info .wrap .etc-info-albtn{float: left;width: 300px;clear: both;}
+.main-img-info .wrap .etc-info-albtn dl dt{color: red;font-size: 15px;}
+.main-img-info .wrap button{width: auto;height: 52px;margin: 0 0 0 102px;
+  border-bottom: 1px solid #000;}
+
 /* 관련상품 */
 #product{clear: both;}
 section .center #product h2{font-size: 30px;}
@@ -362,7 +380,7 @@ section .center #product h2{font-size: 30px;}
 #product .wrap{
   position: relative;
   border:1px solid #fff;
-  margin:10px 5px;
+  margin:10px 0;
   padding: 10px;
 }
 #product .wrap img{
@@ -370,7 +388,9 @@ section .center #product h2{font-size: 30px;}
   padding:20px;
   box-sizing: border-box;
 }
-#product .wrap dl dt{font-weight: bold;}
+#product .wrap dl dt{font-weight: bold;text-align: center;}
+#product ul li:nth-of-type(1) .wrap dl dd,
+#product ul li:nth-of-type(4) .wrap dl dd{padding-top: 40px;}
 #product .wrap dl dd:last-child{
   text-align: right;
   padding-top: 20px;
