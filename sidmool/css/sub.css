@@ -294,7 +294,7 @@ section .center{width: 720px;padding-left: 10px;}
 .box1{height: 7764px;}
 .box3{height: 600px;}
 .box4{height: 600px;}
-.box1{background: none; margin-top: 50px;}
+.box1{background: none;margin-bottom: 50px;}
 .box2{background: none;}
 .box3{background: none;}
 .box4{background: none;}
@@ -368,6 +368,7 @@ section .center{width: 720px;padding-left: 10px;}
 .main-img-info .sub-sns a:last-child span{left: 2px;}
 .main-img-info .wrap .etc-info-albtn{float: left;width: 300px;clear: both;}
 .main-img-info .wrap .etc-info-albtn dl dt{color: red;font-size: 15px;}
+.main-img-info .wrap .etc-info-albtn dl dd{padding: 10px;font-size: 12px;}
 .main-img-info .wrap button{width: auto;height: 52px;margin: 0 0 0 102px;
   border-bottom: 1px solid #000;}
 
@@ -407,7 +408,9 @@ box-shadow: none;}
 /* 리뷰보기 */
 .table>thead>tr>th{border-bottom: none;}
 /* 리뷰,문의 공통 */
-.dotted-box{border-bottom: 1px dashed;}
+.dotted-box{background: #efefef;}
+.dotted-box div ul li:nth-child(1){font-size: 20px;}
+.dotted-box div ul li:not(li:nth-child(1)) li{}
 .btn-black{width: 100px;height: 45px;background: #000;color: #fff;border: 0;outline-style: none;}
 .btn-white{width: 100px;height: 45px;background: #fff;color: #000;border: 1px solid #000;outline-style: none;}
 .box3 button, .box4 button{
