@@ -283,6 +283,7 @@ section .center{width: 720px;padding-left: 10px;}
   border: 0;
 }
 .btn-group button#btn-modal{outline-style: none;}
+#myModal2 .modal-body p{font-size: 12px;}
 .btn-group #box2{
   border-color: #efefef;
   color: #000;
@@ -373,7 +374,7 @@ section .center{width: 720px;padding-left: 10px;}
 
 /* 관련상품 */
 #product{clear: both;}
-section .center #product h2{font-size: 30px;}
+section .center #product h2{font-size: 25px;}
 #product ul{overflow: hidden; margin:0 -5px;}
 #product ul li{float: left; width: 25%;}
 #product ul li:hover .wrap{border:1px solid #555;}
