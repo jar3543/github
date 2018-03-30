@@ -321,7 +321,7 @@ section .center{width: 720px;padding-left: 10px;}
 .buy_box div.price{padding-top: 20px;}
 .buy_box .price .ori{display: inline-block;}
 .buy_box .price .sale{display: inline-block;}
-.buy_box .price .ori p{display: inline-block;vertical-align: middle;}
+.buy_box .price .ori p{display: inline-block;vertical-align: middle;text-decoration: line-through;}
 .buy_box .price .sale p{display: inline-block;vertical-align: middle;}
 .buy_box .price .sale .price{font-size: 30px;color: red;}
 .buy_box .option-area div{display: inline-block;}
