@@ -12,6 +12,7 @@ ul.text-muted, .text-muted li{list-style-type: none;}
 /* footer */
 .pull-right{font-size: 25px;width: 100%;}
 footer .container-fluid .footer-textalign{text-align: center;}
+.contact-bg .fotext{color: #fff;}
 
 
 
@@ -79,7 +80,7 @@ p {
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000;
 }
 
 .wide-space {
@@ -382,7 +383,7 @@ textarea {
 
 .margin-top-0 {
     margin-top: 0;
-    color: #fff;
+    color: #000;
 }
 
 .feature {
