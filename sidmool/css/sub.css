@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
 a{text-decoration: none;}
 /* header ===============================================================*/
@@ -293,11 +293,10 @@ section .center{width: 720px;padding-left: 10px;}
 .btn-group #box4{padding-right: 0;}
 .box1{height: 7764px;}
 .box3{height: 600px;}
-.box4{height: 600px;}
-.box1{background: none;margin-bottom: 50px;}
+.box4{height: 600px;background: none;margin-top: 90px;}
+.box1{background: none;margin-bottom: 90px;}
 .box2{background: none;}
 .box3{background: none;}
-.box4{background: none;}
 /* 상세 페이지 메인 */
 .sub-main{
   padding-top: 38px;
@@ -408,9 +407,11 @@ box-shadow: none;}
 /* 리뷰보기 */
 .table>thead>tr>th{border-bottom: none;}
 /* 리뷰,문의 공통 */
-.dotted-box{background: #efefef;}
+.dotted-box{background: #efefef;padding: 10px;}
 .dotted-box div ul li:nth-child(1){font-size: 20px;}
-.dotted-box div ul li:not(li:nth-child(1)) li{}
+.dotted-box div ul li.boxtitle{padding-bottom: 20px;}
+.dotted-box div ul li:not(.boxtitle){padding:0 20px;}
+/* .dotted-box div ul li:nth-of-type(2), .dotted-box div ul li:nth-of-type(3){padding-left: 5px;} */
 .btn-black{width: 100px;height: 45px;background: #000;color: #fff;border: 0;outline-style: none;}
 .btn-white{width: 100px;height: 45px;background: #fff;color: #000;border: 1px solid #000;outline-style: none;}
 .box3 button, .box4 button{
@@ -425,7 +426,7 @@ box-shadow: none;}
 
 /* footer =============================================================*/
 /* 배너 */
-.banner{padding: 7000px 0 0;}
+.banner{padding: 7240px 0 0;}
 .banner-wrap{width: 925px;margin: auto;background: #e2dfdf;}
 .banner-wrap img{}
 
