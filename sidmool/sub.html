@@ -364,33 +364,6 @@
                     <p class="info">100ml</p>
                   </div>
                 </div>
-                <!-- 옵션 -->
-                <div class="bs-example option_box">
-                    <ul class="nav nav-pills" role="tablist">
-                      <li role="presentation" class="dropdown opt1">
-                        <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                          옵션
-                          <span class="caret"></span>
-                        </a>
-                        <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                          <li role="presentation" value="1"><a role="menuitem" tabindex="-1">1</a></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1">1+1</a></li>
-                        </ul>
-                      </li>
-                      <li role="presentation" class="dropdown opt2">
-                        <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                          수량
-                          <span class="caret"></span>
-                        </a>
-                        <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
-                          <li role="presentation"><a role="menuitem" tabindex="-1">Action</a></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1">Another action</a></li>
-                        </ul>
-                      </li>
-                    </ul> <!-- /pills -->
-                  </div>
-
-                <!-- 옵션 end -->
                 <div class="button-wrap">
                   <a href="#">바로구매</a>
                   <a href="#">장바구니</a>
@@ -816,22 +789,6 @@
       e.preventDefault();
       $(this).next().slideToggle();
     })
-
-    // 옵션
-    $('.dropdown-toggle').dropdown()
-
-    // drop5의 li를 클릭햇을 때 drop5의 text가 변경된다.
-    var txt1 = $('.option_box .opt1 ul li a').text();
-    var txt2 = $('.option_box .opt2 ul li a').text();
-    // var txt = $('.option_box .opt2 ul li a:selected').text();
-    $('.option_box .opt1').on('change',function(){
-      $(this).val("1").prop("selected",true);
-      // $('.option_box ul .dropdown #drop5').append(txt1);
-      // $('.option_box ul .dropdown #drop5').find(txt1).remove();
-    })
-    // $('.option_box .opt2 ul li').on('click',function(){
-    //   $('.option_box ul .dropdown #drop6').text(txt);
-    // })
 
     </script>
 
