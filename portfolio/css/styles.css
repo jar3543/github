@@ -12,11 +12,8 @@ ul.text-muted, .text-muted li{list-style-type: none;}
 /* footer */
 .pull-right{font-size: 25px;width: 100%;}
 footer .container-fluid .footer-textalign{text-align: center;}
-.contact-bg .fotexth2{color: #fff;}
-.contact-bg .fotext{color: #fff;}
-
-
-
+.contact-bg .fotexth2{color: #000;}
+/* ================================================================== */
 .contact-bg{
   background: url(../assets/contact-post7.png) no-repeat center;
   background-size: cover;
@@ -336,10 +333,6 @@ footer {
         margin-right: auto;
         margin-left: auto;
         max-width: 1000px;
-    }
-
-    header .header-content .inner h1 {
-        font-size: 80px;
     }
 
     header .header-content .inner p {
