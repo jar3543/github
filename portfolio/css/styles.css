@@ -14,6 +14,10 @@ ul.text-muted, .text-muted li{list-style-type: none;}
 footer .container-fluid .footer-textalign{text-align: center;}
 .contact-bg .fotexth2{color: #000;}
 /* ================================================================== */
+@media (max-width: 767px) {
+  header .header-content{height: 500px;}
+
+}
 .contact-bg{
   background: url(../assets/contact-post7.png) no-repeat center;
   background-size: cover;
@@ -22,13 +26,6 @@ footer .container-fluid .footer-textalign{text-align: center;}
 .contact-rbga-padding{padding: 5%;}
 
 .glyphicon{color: #fff;font-size: 40px;width: 100%;}
-
-/*
-
-Landing Zero theme - A free landing page theme from BootstrapZero
-http://www.bootstrapzero.com
-
-*/
 
 @import url(https://fonts.googleapis.com/css?family=Questrial);
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
@@ -141,7 +138,6 @@ footer {
     background-color: #222;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
-    transition: all .4s;
 }
 
 .navbar-header > .navbar-brand {
@@ -255,13 +251,12 @@ header {
     text-align: center;
     color: #fff;
     width: 100%;
-    background-image: url('../assets/mainimg.jpg');
+    background: url('../assets/m-bg.jpg')no-repeat;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    transition-delay: 1s;
 }
 
 header .header-content {
@@ -343,7 +338,6 @@ footer {
     }
 
     section {
-        /* min-height: 600px; */
         padding: 100px 0;
     }
 
