@@ -12,7 +12,7 @@ ul.text-muted, .text-muted li{list-style-type: none;}
 /* footer */
 .pull-right{font-size: 25px;width: 100%;}
 footer .container-fluid .footer-textalign{text-align: center;}
-.contact-bg .fotexth2{color: #000;}
+.contact-bg .fotexth2{color: #8a8888;}
 /* ================================================================== */
 @media (max-width: 767px) {
   header .header-content{height: 500px;}
@@ -44,10 +44,11 @@ body {
 }
 
 hr {
-    max-width: 80px;
+    max-width: 110px;
     border-width: 3px;
     margin-top: 15px;
     margin-bottom: 15px;
+    border-top: 2px solid #020202 !important;
 }
 
 hr.light {
