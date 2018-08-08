@@ -80,7 +80,7 @@ p {
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
-    color: #000;
+    color: #fff;
 }
 
 .wide-space {
@@ -339,6 +339,7 @@ footer {
 
     header .header-content .inner h1 {
         font-size: 80px;
+        background: #0000004d;
     }
 
     header .header-content .inner p {
@@ -383,7 +384,7 @@ textarea {
 
 .margin-top-0 {
     margin-top: 0;
-    color: #000;
+    color: #fff;
 }
 
 .feature {
