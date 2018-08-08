@@ -16,7 +16,7 @@ footer .container-fluid .footer-textalign{text-align: center;}
 
 
 .contact-bg{
-  background: url(../assets/contact-post7.png) no-repeat center;
+  background: url(../assets/contact2.jpg) no-repeat center;
   background-size: cover;
 }
 .contact-rgba{background-color: rgba(0,0,0,0.5);}
@@ -195,7 +195,7 @@ footer {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: transparent;        
+        border-color: transparent;
         min-height: 60px;
     }
 
@@ -257,7 +257,7 @@ header {
     text-align: center;
     color: #fff;
     width: 100%;
-    background-image: url('../assets/mainimg.jpg');
+    background-image: url('../assets/lake.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
