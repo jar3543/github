@@ -10,10 +10,10 @@ ul.text-muted, .text-muted li{list-style-type: none;}
 .gallery-box-content p:nth-of-type(1){padding-top: 10px;}
 
 /* footer */
-.pull-right{font-size: 25px;width: 100%;}
+.pull-right{font-size: 13px;width: 100%;}
 footer .container-fluid .footer-textalign{text-align: center;}
 
-
+/*===============================================================*/
 
 .contact-bg{
   background: url(../assets/contact2.jpg) no-repeat center;
@@ -339,7 +339,7 @@ footer {
 
     header .header-content .inner h1 {
         font-size: 80px;
-        background: #0000004d;
+        background: #0000009c;
     }
 
     header .header-content .inner p {
