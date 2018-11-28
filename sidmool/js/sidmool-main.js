@@ -117,4 +117,7 @@ $(function(){
     //내가 클릭한 a의 부모인 h2의 바로 다음에 오는 items를 보여준다.
     $(this).parent().next().show();
   })
+
+
+
 })//종료
