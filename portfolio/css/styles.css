@@ -257,7 +257,7 @@ header {
     text-align: center;
     color: #fff;
     width: 100%;
-    background-image: url('../assets/lake.jpg');
+    /* background-image: url('../assets/lake.jpg'); */
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
