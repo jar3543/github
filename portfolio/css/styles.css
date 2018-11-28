@@ -257,7 +257,6 @@ header {
     text-align: center;
     color: #fff;
     width: 100%;
-    /* background-image: url('../assets/lake.jpg'); */
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -339,7 +338,6 @@ footer {
 
     header .header-content .inner h1 {
         font-size: 80px;
-        background: #0000009c;
     }
 
     header .header-content .inner p {
