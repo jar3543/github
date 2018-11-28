@@ -255,8 +255,9 @@ header {
     position: relative;
     min-height: auto;
     text-align: center;
-    color: #fff;
+    color: #6d6969;
     width: 100%;
+    background-color: #f7f5f5;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
