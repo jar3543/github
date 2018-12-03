@@ -32,7 +32,7 @@ header h1{
   margin-top: 0;
   background: #b6caba;}
 /* 네비게이션 */
-header h1 img{
+header h1 a img{
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -376,36 +376,23 @@ font-size: 20px;}
   font-size: 20px;
 }
 
-/* gallary ==============================================================*/
-/* 스와이퍼 */
-/* 갤러리 */
+/* special care 스폐셜 케어================================================================*/
 .wrap_gallary{clear: both;background: #fff;}
-.wrap_gallary h1{
-  background: #fff;
-  position: absolute;
-  font-size: 24px;
-  top: -117%;
-  transform: translateX(-254%);
-}
-.swiper-container{padding-top: 97px;padding-bottom: 100px;
-  height: 290px !important;
-}
-.swiper-slide-main-text h2{color: #8ccc8c;}
-.swiper-slide-main-text p{padding-left: 20px;}
-.swiper-slide-main-text button{border: 1px solid #abdc87;border-left: 0;
-  border-right: 0;background: #fff;}
-.swiper-bg{display: none;}
-.swiper-bg a span{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  background: rgba(0,0,0,0.5);}
-.swiper-slide .swiper-slide-text{padding: 0 50px;}
-.swiper-slide .swiper-slide-text h2{color: #8ed08e;}
-.swiper-slide .swiper-slide-text p{font-size: 20px;padding: 5px 10px;color: #000;}
-.swiper-slide .swiper-slide-text button{border: 1px solid #abdc87;
-  border-left: 0;border-right: 0;background: #fff;}
+.wrap_gallary h1{background: #fff;position: absolute;font-size: 24px;top: -117%;
+  transform: translateX(-254%);}
+.swiper-container{padding-bottom: 100px;}
+
+.wrap_sc{clear: both;width: 1100px;height: 98px;margin: 0 auto;margin-bottom: 20px;
+  padding:10px 5px 0 10px;border: 1px solid #dcd9d9;}
+.wrap_sc:hover{background-color: #f1efd1;}
+figure{display: inline-block;margin-bottom: 20px;
+  /* padding: 15px;background: rgb(199, 203, 200); */
+  color: #000;}
+figure .img_box{width: 100%;overflow: hidden;}
+figure .img_box a{text-decoration: none;color: #fff;}
+figure img{width: 64px;height: auto;vertical-align: middle;transition: 0.5s;}
+figure img:hover{transform: scale(1.5);}
+figure figcaption{text-align: center;font-size: 12px;padding:5px 0;}
 
 /* 탭메뉴 & 데일리 추천 ====================================================*/
 .tab-section{
@@ -493,107 +480,36 @@ font-size: 20px;}
 }
 .board-wrap div button:hover{background: #000;color: #fff;}
 
-/* 포토후기/sns */
+/* 포토후기/sns/sidmool====================================================== */
 .photo-sns{width: 1100px;margin: auto;}
 /* 포토후기 */
 .photo-wrap{
+  float: left;
   width: 350px;
   height: 400px;
-  position: relative;
-  display: inline-block;
-  background: #f5f1c9;
-  float: left;}
-.photo-wrap h1{font-weight: bold;font-size: 20px;
-  position: relative;display: inline-block;padding-top: 50px;}
-.photo-wrap h1::after{
-  content: '';
-  display: inline-block;
-  background:#000;
-  width: 200px;
-  height: 2px;
-  position: absolute;
-  bottom: -2px;
-  left: 0;}
-.photo-wrap button{
-  position: absolute;
-  bottom: 102px;
-  left: -53px;
-  transform: translateX(100%);
-  border: 1px solid #000;
-  background: #fff;
-  border-left: 0;
-  border-right: 0;
-  width: 100px;
-  height: 30px;
-}
-.photo-wrap button:hover{
-  color: #fff;
-  background: #000;
-}
-.photo-wrap h4{
-  font-size: 20px;
-  position: relative;
-  top: 40px;
-  padding-left: 20px;}
-.photo-wrap p{position: absolute;padding: 49px 0 0 20px;}
-.mouseover_photo{padding-top: 80px;background: #dbecd7;}
-.photo-images{
-  width: 324px;
-  height: 366px;
-  position: relative;
-  display: inline-block;
-  float: right;
-  top: -128px;
-  box-shadow: 2px 3px 10px #000000;
+  background-image: url(../images/photoreview.png);
   cursor: pointer;
 }
-.photo-images div{
-  width: 160px;
-  height: 180px;
-  display: inline-block;
-  float: left;
+.photo-wrap a{
+  width: 350px;
+  height: 400px;
+  display: block;
 }
-.photo-images div img{width: 100%;}
-.photo-images div a{
-  width: 300px;
-  height: 300px;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.photo-images div a{
-  background: rgba(255, 255, 255, 0.62);
-  padding: 100px;
-  position: relative;
-  top: 150px;
-  color: #000;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-.photo-images ul div img{
-  width: 100%;
+.photo-wrap:hover a{
+  background-image: url(../images/photoreview_h.png);
+  overflow: hidden;
 }
 
 /* sns */
 .sns-text-wrap{
-  width: 340px;
+  width: 350px;
   height: 400px;
   position: relative;
   background: gray;
   display: inline-block;
   float: left;
+  cursor: pointer;
 }
-.sns-text-wrap button:hover{
-  color: #fff;
-  background: #000;
-}
-.sns-text-wrap h4{
-  font-size: 20px;
-  position: relative;
-  top: 40px;
-  padding-left: 20px;}
 .sns-text-wrap button{
   position: absolute;
   bottom: 102px;
@@ -607,88 +523,30 @@ font-size: 20px;}
   height: 30px;
 }
 
-.sns-wrap{
+/* sidmool */
+.widsidmool{
   height: 400px;
   display: inline-block;
   width: 400px;
   margin-left: 0;
+  cursor: pointer;
 }
-.sns-wrap div h1{
-  font-weight: bold;
-  font-size: 20px;
-  position: relative;
+
+/* 배너 ======================================================================*/
+/* .banner{padding: 50px 0 0;}
+.banner_wrap{width: 925px;margin: auto;background: #e2dfdf;} */
+
+@keyframes banner {
+  0%{margin-left: 0;}
+  100%{margin-left: -938px;}/*배너1개의 폭(67px)*14*/
 }
-.sns-wrap div h1::after{
-    content: '';
-    display: inline-block;
-    background:#000;
-    width: 200px;
-    height: 2px;
-    position: absolute;
-    bottom: -3px;
-    left: 0;}
-.sns-wrap div h4{
-  font-size: 20px;
-  padding: 47px 15px 0 0;
-}
-.sns-wrap div button{
-  position: absolute;
-  bottom: 155px;
-  right: -24px;
-  transform: translateX(-50%);
-  border: 1px solid #000;
-  background: none;
-  border-left: 0;
-  border-right: 0;
-  width: 100px;
-  height: 30px;
-}
-.sns-wrap div button:hover{
-  color: #fff;
-  background: #000;
-}
-.sns-wrap .sns-images{
-  width: 400px;
-  height: 400px;
-  display: inline-block;
-  margin-right: 300px;
-  float: left;
-}
-.sns-wrap .sns-images > div{
-  position: relative;
-  float: left;
-  width: 200px;
-  height: 200px;
-}
-.sns-wrap .sns-images > div img{
-  width: 100%;
-}
-.sns-wrap .sns-images > div a{
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  color: #000;
-  background: rgba(255, 255, 255, 0.5);
-  display: inline-block;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-.sns-wrap .sns-images > div:hover a{
-  opacity: 1;
-  visibility: visible;
-}
-/* 배너 */
-.banner{padding: 50px 0 0;}
-.banner-wrap{width: 925px;margin: auto;background: #e2dfdf;}
-.banner-wrap img{}
+
+.banner{position: relative;height: 70px;margin: 40px 0;}
+.banner_wrap{max-width: 700px;margin: auto;overflow: hidden;}
+.banner .banner_wrap ul{width: 1550px;animation: banner 10s linear infinite;}
+.banner .banner_wrap ul li{float: left;}
+.banner .banner_wrap ul li img{max-width: 100%;}
+
 
 /* footer */
 footer{height: 300px; background: #333; color:#777; font-size: 13px; text-align: center;}
@@ -751,5 +609,5 @@ html, body {
       align-items: center;
     }
 
-/* 부트스트랩 */
+/* 부트스트랩 ================================================================*/
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{background-color: #fff;}
