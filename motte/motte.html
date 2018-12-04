@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>scrollspy_songs</title>
+    <title>motte index</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     *{margin: 0; padding: 0;box-sizing: border-box;}
@@ -42,9 +42,6 @@
     }
 
     section .st_position{
-    /* top: -3500px;
-    left: -550px;
-    position: relative; */
     }
     section .st_flower i.fixed{
       position: fixed;
@@ -164,8 +161,6 @@
         </i></button>
     </div>
 <!-- 네비게이션 -->
-<!-- href와section의id값 일치 -->
-<!-- fixed 는 첫화면에서 고정시킬 때 class로 써준다 -->
     <nav>
       <ul>
         <li><p>INTRO</p><a href="#a">MOTTE</a></li>
@@ -175,7 +170,6 @@
       </ul>
     </nav>
 <!-- 컨텐츠영역 -->
-<!-- 디자인 입히기:class box -->
   <section>
     <div id="a" class="box">
       <p class="contents">MOTTE</p>
@@ -217,7 +211,6 @@
     <!-- 버튼 클릭 시 이동될 때 나타나는 효과 (19.scroll) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
-      // $(function(){//스크립트가 body위에 잇을 때 넣어주면 좋다.
       //스크롤 이벤트
       $(window).scroll(function(){
         var a=$('#a').offset().top;
@@ -268,7 +261,6 @@
 
     // 네비게이션 메뉴 눌럿을 때 해당 컨텐츠로 이동하기
     $('nav a, .st_flower a').click(function(e){
-      //페이지 추가하는 방법:id와class를 맞춰주고 요소 추가,밑에 것은 그대로 써준다
       if(this.hash !==""){// 빈값이 아닐 때
       e.preventDefault();
       var hash=this.hash;

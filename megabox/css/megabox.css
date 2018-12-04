@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*common*/
+*{margin: 0; padding: 0}
+a{text-decoration: none;}
+li{list-style: none;}
+.text-over{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre-line;
+}
+.text-through{
+  text-decoration: line-through /*텍스트 중간*/
+  color: #aaa;
+}
+.skip{
+  font-size: 0;text-indent: -99999px;position: absolute;
+  }
+body{
+  min-width: 1200px; font-family: 'Nanum Gothic', sans-serif;}
+
+/*nav*/
+nav{
+  position: fixed; /*스크롤을 내려도 화면에서 고정됨.*/
+  width: 200px;
+  height: 100%;/*화면에 꽉 찬 높이*/
+  background: #fff;
+  z-index: 100;
+  border-right: 1px solid #555555;
+}
+nav h1{text-align: center;padding: 10px 0px;}
+nav ul{
+  border-top: 1px solid #000;
+  overflow: hidden;
+}
+nav ul li{}
+nav ul li a{
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #eeeeee;
+  font-size: 20px;
+  color: #000;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000;
+}
+nav ul li:hover a, .active{  /*li 혹은 a에 해도됨.(=nav ul li a:hover)*/
+  background: #000;
+  color: #fff;
+}
+nav #sns{
+  position: absolute;
+  text-align: center;
+  right: 77px;
+  bottom: 66px;
+}
+nav #sns a{
+  display: inline-block;
+  font-size: 0;
+  /*백그라운드가 보여질 영역*/
+  width: 28px;
+  height: 28px;
+  background: url(../images/sns.gif) no-repeat;
+  background-size: 350px 250px;
+}
+nav #sns a.sns-facebook{
+  background-position: -27px -22px;
+}
+nav #sns a.sns-twitter{
+  background-position: -65px -22px;
+}
+/*section*/
+section{
+  margin-left: 200px; /*section 여백*/
+  padding: 0 10px;
+}
+section h2{
+  padding: 20px 0;
+  border-bottom: 2px solid #000;
+}
+/*men*/
+#men ul{
+  margin: 5 -5px;
+  overflow: hidden;/*높이가0이라고 나올 때 이렇게 처리*/
+}
+#men ul li{float: left;width: 33.33%;}
+#men ul li.thirdli{clear: left;}
+#men ul li .wrap{
+  position: relative; /*부모 자체가 움직이지않도록*/
+  margin: 5px; /*li에 margin을 주고싶으면 box-sizing을 해줘야함.*/
+}
+#men ul li .wrap img{
+  width: 100%;
+  display: block;
+  background: #f0f0f0;
+  padding: 30px;
+  box-sizing: border-box;
+}
+#men ul li .wrap .contents{
+  position: absolute;
+  top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  visibility: hidden; /*백그라운드 투명처리를 숨김*/
+  transition: all 1s;
+  opacity: 0;
+}
+#men ul li:hover .contents{
+  visibility: visible; /*마우스 오버했을 때 숨김처리를 해제하여 보이도록*/
+  opacity: 1;
+}
+#men ul li .wrap .contents p{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #fff;
+}
+/*women=======================================================================*/
+/*위치지정 시 px말고 %를 사용*/
+#women{background: #fff;}
+#women ul{overflow: hidden;}
+#women ul li{
+  width: 50%;
+  float: left;
+  cursor: pointer;
+}
+#women ul li.afirstrunfilm{clear: left;}
+#women .wrap{
+  position: relative;
+  background: #f0f0f0;
+  overflow: hidden;
+  box-sizing: border-box;/*아래에 선을 놓기위해 이미지처리*/
+  border-bottom: 1px solid #555;
+  overflow: hidden;/*높이가 0이니까 이렇게 처리*/
+  margin-left:  5px;
+}
+#women .wrap img{
+  float: left;
+  width:40%;
+  padding: 20px;
+  background: #f7f7f7;
+  box-sizing: border-box;
+}
+#women .wrap dl{
+  width: 71%;
+  height: 100%;
+  left: 40%;
+  padding: 10px 0 10px 10px;
+}
+#women .wrap dl dt{
+  font-weight: bold;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+#women .wrap dl dd{
+}
+#women .wrap dl dd:last-child{
+  left: 40%;
+  bottom: 50px;
+  position: absolute;
+  width: 270px;
+  height: 150px;
+  font-size: 13px;
+}
+/*boys*/
+#boys{
+  overflow: hidden; margin-right: 0 -5px;
+}
+#boys ul{
+  overflow: hidden;/*영역지정이 안되잇을 때,높이가 지정안되있을 때*/
+  padding: 10px;
+}
+#boys ul li{
+  float: left;/*li안에 잇는 것들을 전부 옆으로 나열*/
+  width: 33.33%;
+  position: relative;
+}
+#boys ul li:nth-child(4){clear: left;}
+#boys ul li:hover .wrap{
+  border: 1px solid #000;
+}
+#boys ul li .wrap{
+  position: relative; /**/
+  border: 25px solid #fff;
+  margin: 10px 5px; /*이미지 퍼센트로 조절하지말고 margin으로조절*/
+  padding: 10px;
+}
+#boys .wrap img{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f0f0f0;
+}
+#boys .wrap > span{
+  display: block; /*텍스트를 블럭처리*/
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+#boys ul li .wrap dl{}
+#boys ul li .wrap dl dt{
+  font-weight: bold;
+}
+
+/*girls*/
+#girls{}
+#girls .slide{
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+}
+#girls .slide .slide-contents{
+  overflow: hidden;
+  width: 780px;/**/
+  margin: 0 auto; /*가운데 위치*/
+}
+#girls .slide .slide-contents ul{
+  position: relative;
+  height: 386px;
+  width: 1560px;
+}
+#girls .slide .slide-contents ul li{
+  float: left;width: 260px; /*260*6=1560*/
+}
+#girls .slide .slide-contents ul li:hover .wrap{
+  border: 1px solid #555;
+}
+#girls .slide .slide-contents .wrap{
+  position: relative;
+  margin: 10px 5px;
+  border: 1px solid #fff;
+  padding: 4px;
+}
+#girls .slide .slide-contents .wrap img{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #f0f0f0;
+}
+#girls .slide .slide-contents .wrap > span{
+  display: block;
+  border-bottom: 1px solid #555;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+#girls .slide .slide-contents .wrap dl dt{font-weight: bold;text-overflow: ellipsis;
+  overflow: hidden;white-space: nowrap;}
+#girls .slide .slide-contents .wrap dl dd:last-child{padding-top: 20px;}
+#girls .slide button{
+  background: none;
+  border: none;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#girls .slide .prev{left: 0;}
+#girls .slide .next{right: 0;}
+#msg{
+  display: none;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0,0,0,0.5);
+  min-width: 200px; /*최소넓이지정 200이하로 작아지지않게*/
+  line-height: 50px; /*height를 따로 안줘도 됨.=줄간격*/
+  color: #fff;
+  text-align: center;
+  border-radius: 45px;
+  padding: 20px;
+}
+
+/*footer*/
+footer{
+  position: fixed;
+  bottom: 20px;
+  z-index: 200;
+  width: 200px;
+  text-align: center;
+}
+
+/*기타*/
+/*위로가기*/
+#goTop{
+  position: fixed;
+  width: 40px; height: 30px;
+  bottom: 20px; right: 20px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  border: 0;
+  z-index: 1000;
+  /*기본 숨김처리*/
+  opacity: 0;
+  visibility: hidden;
+  /*부드럽게 처리*/
+  transition: all 1s;
+}
+#goTop.on{
+  opacity: 1;/*반투명*/
+  visibility: visible;
+}
+
+/*팝업*/
+#popup{
+  display: none; /*기본적으로 비활성화*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.5);
+  z-index: 1001;
+}
+#popup .popup-contents{
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 600px;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  border: 3px solid #000;
+}
+#popup .popup-contents .top{
+  position: relative;
+  height: 50px;
+  background: #000;
+}
+#popup .popup-contents .top h3{
+  color: #fff; line-height: 50px;
+  padding-left: 20px;
+}
+#popup .popup-contents .close{}
+#popup .popup-contents img{
+  width: 100%;
+  /*패딩과 박스처리를 함께*/
+  box-sizing: border-box;
+  padding: 0 50px;
+}
