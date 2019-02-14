@@ -120,7 +120,7 @@ var swiper = new Swiper('.swiper-container', {
       speed:1000,
       mousewheelControl: false,
       keyboardControl: true,
-      autoplay:true,
+      autoplay:false,
       centeredSlides: true,
 
       effect: "slide",
