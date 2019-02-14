@@ -1,0 +1,144 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+html,body{
+  position: relative;
+  /* height: 100%; */
+}
+
+/* main star =================================================================*/
+.swiper-container.star_swiper{
+  width: 100%;
+  height: 750px;
+}
+
+.swiper-container.star_swiper .parallax-bg.main_parallax_bg{
+  position: absolute;
+  left:0; top:0;
+  width:100%;
+  height: 100%;
+  /* background: #000; */
+  background: #282537;
+  background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  overflow: hidden;
+  transform: translate3d(0,0,0) !important;
+}
+.swiper-container.star_swiper .parallax-bg.main_parallax_bg a{
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  background: #fff;
+  animation-delay: 2s;
+  filter: blur(1px);
+  transition: all 2s;
+  animation: even 2s infinite alternate;
+}
+.swiper-container.star_swiper .parallax-bg.main_parallax_bg a:nth-child(odd){
+  width: 2px;height: 2px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0.5px blue;
+  transition: all 2s;
+  animation: odd 2s infinite alternate;
+  /* animation: size 3s infinite alternate; */
+}
+.swiper-container.star_swiper .parallax-bg.main_parallax_bg a:nth-child(10n){
+  width: 5px;height: 5px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 30px 1px blue;
+  transition: all 1s;
+  animation: odd 5s infinite alternate;
+}
+.swiper-container.star_swiper .parallax-bg.main_parallax_bg a:nth-child(3n+2){
+  width: 1px;
+  height: 1px;
+  background: #fff;
+  filter: blur(0px);
+}
+.swiper-container.star_swiper .parallax-bg.main_parallax_bg a:nth-child(50n){
+  width: 5px;height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 0px 20px 1px white;
+  filter: blur(0px);
+  opacity: 1;
+}
+
+/* 반짝이는 효과주기 */
+@keyframes odd {
+  0%,100%{opacity: 0;}
+  10%{opacity: .3;background: yellow;}
+  50%{opacity: .1;}
+  80%{opacity: .5;}
+}
+
+@keyframes even {
+  0%,100%{opacity: 1;}
+  /* 10%{opacity: .1;background: blue;} */
+  50%{opacity: 0;}
+  80%{opacity: .9;box-shadow: 0px 0px 20px 0.5px blue;}
+  90%{opacity: 0;box-shadow: 0px 0px 20px 0.5px blue;}
+}
+/* main star end ============================================================*/
+
+/* miantext */
+.maintext{
+  position: relative;
+  top:15%; left:50%; height: 150px;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  opacity: 0;
+}
+
+
+.maintext h1{color:#fff; letter-spacing: 10px;}
+.maintext div{
+  position: absolute;
+  bottom:0;
+  margin-left:-5px;
+  animation: load 1.5s infinite;
+  font-size: 50px;
+  color:#fff;
+}
+.maintext .bar1{left:0%;}
+.maintext .bar2{left:10%; animation-delay: 0.1s;}
+.maintext .bar3{left:20%; animation-delay: 0.2s;}
+.maintext .bar4{left:30%; animation-delay: 0.3s;}
+.maintext .bar5{left:40%; animation-delay: 0.4s;}
+.maintext .bar6{left:50%; animation-delay: 0.5s;}
+.maintext .bar7{left:60%; animation-delay: 0.6s;}
+.maintext .bar8{left:70%; animation-delay: 0.7s;}
+.maintext .bar9{left:80%; animation-delay: 0.8s;}
+.maintext .bar10{left:90%; animation-delay: 0.9s;}
+.maintext .bar11{left:100%; animation-delay: 1s;}
+
+/* hello there / bg -모바일,타블릿 */
+@media (max-width: 767px) {
+  .maintext{width: 100%;}
+  /* bg 높이 */
+  .swiper-container,.parallax-bg{
+    height: 500px;
+  }
+}
+/* 애니메이션 */
+@keyframes load {
+  0%{transform: translateY(0px);}
+  33%{transform: translateY(24px); font-size: 20px;}
+  66%{transform: translateY(-16px);}
+  88%{transform: translateY(4px);}
+  100%{transform: translateY(0px);}
+}
+
+@keyframes hue {
+  0%{filter: hue-rotate(0deg);}
+  100%{filter: hue-rotate(360deg);}
+}
+
+.bounce{animation: bounce 1s infinite alternate;}
+@keyframes bounce {
+  from{bottom:30px;}
+  to{bottom:10px;}
+}
