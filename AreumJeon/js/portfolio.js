@@ -120,9 +120,9 @@ var swiper = new Swiper('.swiper-container', {
       speed:1000,
       mousewheelControl: true,
       keyboardControl: true,
-      autoplay:false,
+      autoplay:true,
       centeredSlides: true,
-      loop:false,
+
       effect: "slide",
       direction: 'vertical',
             pagination: {
