@@ -118,7 +118,7 @@ var swiper = new Swiper('.swiper-container', {
 
       // auto:true,
       speed:1000,
-      mousewheelControl: true,
+      mousewheelControl: false,
       keyboardControl: true,
       autoplay:true,
       centeredSlides: true,
@@ -127,7 +127,7 @@ var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
             pagination: {
               el: '.swiper-pagination',
-              clickable: true,
+              clickable: false,
             },
     });
 
