@@ -9,21 +9,23 @@ html,body{
 .swiper-container.star_swiper{
   width: 100%;
   height: 750px;
+  background: #efefed;
 }
-
 .swiper-container.star_swiper .parallax-bg.main_parallax_bg{
   position: absolute;
-  left:0; top:0;
-  width:100%;
-  height: 100%;
-  /* background: #000; */
+  left:50%;
+  top:0;
+  width:80%;
+  height: 80%;
+  margin-top: 85px;
+  /* 백그라운드 그라데이션 적용 */
   background: #282537;
   background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
   background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
   background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
   background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
   overflow: hidden;
-  transform: translate3d(0,0,0) !important;
+  transform: translate3d(-50%,0,0) !important;
 }
 .swiper-container.star_swiper .parallax-bg.main_parallax_bg a{
   position: absolute;
@@ -115,14 +117,6 @@ html,body{
 .maintext .bar10{left:90%; animation-delay: 0.9s;}
 .maintext .bar11{left:100%; animation-delay: 1s;}
 
-/* hello there / bg -모바일,타블릿 */
-@media (max-width: 767px) {
-  .maintext{width: 100%;}
-  /* bg 높이 */
-  .swiper-container,.parallax-bg{
-    height: 500px;
-  }
-}
 /* 애니메이션 */
 @keyframes load {
   0%{transform: translateY(0px);}
@@ -141,4 +135,21 @@ html,body{
 @keyframes bounce {
   from{bottom:30px;}
   to{bottom:10px;}
+}
+
+
+
+/* hello there / bg -모바일,타블릿 */
+@media (max-width: 767px) {
+
+  .maintext{width: 100%;}
+  /* bg 높이 */
+  .swiper-container,.parallax-bg{
+    height: 500px;
+  }
+
+  .swiper-container.star_swiper{
+    height: 600px;
+  }
+
 }
