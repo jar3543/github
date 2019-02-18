@@ -101,11 +101,6 @@ html,body{
   animation-duration: 2s;
   animation-delay: 1s;
 }
-
-
-
-
-
 /* main star end ============================================================*/
 
 /* miantext */
@@ -158,17 +153,13 @@ html,body{
 
 
 
-/* hello there / bg -모바일,타블릿 */
+/* mobile ====================================================================*/
 @media (max-width: 767px) {
   /* main */
   .maintext1{width: 50%;}
   /* bg 높이 */
-  .star, .parallax-bg{
-    height: 500px;
-  }
-  .star{
-    height: 650px;
-  }
+  .star, .parallax-bg{height: 500px;}
+  .star{height: 735px;}
   .star .parallax-bg.main_parallax_bg{margin-top: 135px;}
   .maintext1{top: 50px;}
 

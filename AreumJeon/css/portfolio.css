@@ -689,7 +689,7 @@ footer small{
    header nav ul li a.active::before{width: 50%;border-color: #fff;}
 
   .intro{height: 5px;}
-  .intro button{top: -29px;width: 55px;height: 55px;}
+  .intro button{top: -40px;width: 55px;height: 55px;}
 
 /* slide */
    #slide .main_slide{height: 500px;}
