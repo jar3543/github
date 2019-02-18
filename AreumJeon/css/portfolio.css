@@ -647,10 +647,11 @@ footer small{
     position: fixed;
     width: 100%;
     top: 0;
-    background: none;
+    background: #efefed;
     display: block !important;
   }
-  header.fixed{background-color: rgb(255, 254, 254);}
+  header.fixed{height: 70px;background-color: rgb(255, 254, 254);
+    transition: background-color 1s ease;}
   header .logo{text-align: center;}
   header .logo a{font-size: 14px;color: gray;}
    /* .nav nav.mobile{display: block;} */
@@ -688,8 +689,8 @@ footer small{
    header nav ul li a.active::after,
    header nav ul li a.active::before{width: 50%;border-color: #fff;}
 
-  .intro{height: 5px;}
-  .intro button{top: -40px;width: 55px;height: 55px;}
+  .intro{height: auto;}
+  .intro button{top: -100px;width: 55px;height: 55px;}
 
 /* slide */
    #slide .main_slide{height: 500px;}
