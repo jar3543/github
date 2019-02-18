@@ -166,9 +166,10 @@ html,body{
   .star, .parallax-bg{
     height: 500px;
   }
-
   .star{
-    height: 600px;
+    height: 650px;
   }
+  .star .parallax-bg.main_parallax_bg{margin-top: 135px;}
+  .maintext1{top: 50px;}
 
 }
