@@ -1,21 +1,5 @@
 @charset "UTF-8";
 
-/* main ======================================================================*/
-/* 스와이퍼 */
-.star_swiper{width: 100%;height: 500px;}
-.star_swiper h2{
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  text-align: center;
-  font-size: 8px;
-  color: #fff;
-  margin-top: -100px;
-  animation-duration: 2s;
-  animation-delay: 1s;
-}
-
 /* 인트로 ====================================================================*/
 .intro{
   position: relative;
@@ -658,13 +642,6 @@ footer small{
    header nav ul li{
      padding-bottom: 10px;
    }
-
-
-
-
-  /* 스와이퍼1 */
-  .star_swiper h2{top: 135%;font-size: 30px;}
-  .maintext div{font-size: 20px;}
 
 
 }

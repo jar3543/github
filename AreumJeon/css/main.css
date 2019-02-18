@@ -6,17 +6,20 @@ html,body{
 }
 
 /* main star =================================================================*/
-.swiper-container.star_swiper{
+
+/* main ======================================================================*/
+
+.star{
   width: 100%;
   height: 750px;
   background: #efefed;
 }
-.swiper-container.star_swiper .parallax-bg.main_parallax_bg{
+.star .parallax-bg.main_parallax_bg{
   position: absolute;
   left:50%;
   top:0;
   width:80%;
-  height: 80%;
+  height: 500px;
   margin-top: 85px;
   /* 백그라운드 그라데이션 적용 */
   background: #282537;
@@ -27,7 +30,7 @@ html,body{
   overflow: hidden;
   transform: translate3d(-50%,0,0) !important;
 }
-.swiper-container.star_swiper .parallax-bg.main_parallax_bg a{
+.star .parallax-bg.main_parallax_bg a{
   position: absolute;
   display: inline-block;
   width: 1px;
@@ -38,7 +41,7 @@ html,body{
   transition: all 2s;
   animation: even 2s infinite alternate;
 }
-.swiper-container.star_swiper .parallax-bg.main_parallax_bg a:nth-child(odd){
+.star .parallax-bg.main_parallax_bg a:nth-child(odd){
   width: 2px;height: 2px;
   background: #fff;
   box-shadow: 0px 0px 20px 0.5px blue;
@@ -46,7 +49,7 @@ html,body{
   animation: odd 2s infinite alternate;
   /* animation: size 3s infinite alternate; */
 }
-.swiper-container.star_swiper .parallax-bg.main_parallax_bg a:nth-child(10n){
+.star .parallax-bg.main_parallax_bg a:nth-child(10n){
   width: 5px;height: 5px;
   border-radius: 30px;
   background: #fff;
@@ -54,13 +57,13 @@ html,body{
   transition: all 1s;
   animation: odd 5s infinite alternate;
 }
-.swiper-container.star_swiper .parallax-bg.main_parallax_bg a:nth-child(3n+2){
+.star .parallax-bg.main_parallax_bg a:nth-child(3n+2){
   width: 1px;
   height: 1px;
   background: #fff;
   filter: blur(0px);
 }
-.swiper-container.star_swiper .parallax-bg.main_parallax_bg a:nth-child(50n){
+.star .parallax-bg.main_parallax_bg a:nth-child(50n){
   width: 5px;height: 5px;
   border-radius: 50%;
   background: #fff;
@@ -84,38 +87,57 @@ html,body{
   80%{opacity: .9;box-shadow: 0px 0px 20px 0.5px blue;}
   90%{opacity: 0;box-shadow: 0px 0px 20px 0.5px blue;}
 }
+
+/* .star_wrap{position: relative;width: 100%;height: 100%;} */
+/* .title ul{position: relative;} */
+.maintext2{padding-top: 135px;}
+.maintext2 li{
+  /* display: inline-block; */
+  /* position: absolute; */
+  left: 50%;
+  /* top: 50%; */
+  text-align: center;
+  font-size: 8px;
+  color: #fff;
+  /* margin-top: -100px; */
+  padding-bottom: 10px;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+
+
+
+
 /* main star end ============================================================*/
 
 /* miantext */
-.maintext{
+.maintext1{
   position: relative;
   top:15%; left:50%; height: 150px;
   transform: translate(-50%, -50%);
   width: 450px;
   opacity: 0;
 }
-
-
-.maintext h1{color:#fff; letter-spacing: 10px;}
-.maintext div{
+.maintext1 div{
   position: absolute;
   bottom:0;
   margin-left:-5px;
   animation: load 1.5s infinite;
-  font-size: 50px;
-  color:#fff;
+  font-size: 14px;
+  color:#000;
 }
-.maintext .bar1{left:0%;}
-.maintext .bar2{left:10%; animation-delay: 0.1s;}
-.maintext .bar3{left:20%; animation-delay: 0.2s;}
-.maintext .bar4{left:30%; animation-delay: 0.3s;}
-.maintext .bar5{left:40%; animation-delay: 0.4s;}
-.maintext .bar6{left:50%; animation-delay: 0.5s;}
-.maintext .bar7{left:60%; animation-delay: 0.6s;}
-.maintext .bar8{left:70%; animation-delay: 0.7s;}
-.maintext .bar9{left:80%; animation-delay: 0.8s;}
-.maintext .bar10{left:90%; animation-delay: 0.9s;}
-.maintext .bar11{left:100%; animation-delay: 1s;}
+.maintext1 .bar1{left:0%;}
+.maintext1 .bar2{left:10%; animation-delay: 0.1s;}
+.maintext1 .bar3{left:20%; animation-delay: 0.2s;}
+.maintext1 .bar4{left:30%; animation-delay: 0.3s;}
+.maintext1 .bar5{left:40%; animation-delay: 0.4s;}
+.maintext1 .bar6{left:50%; animation-delay: 0.5s;}
+.maintext1 .bar7{left:60%; animation-delay: 0.6s;}
+.maintext1 .bar8{left:70%; animation-delay: 0.7s;}
+.maintext1 .bar9{left:80%; animation-delay: 0.8s;}
+.maintext1 .bar10{left:90%; animation-delay: 0.9s;}
+.maintext1 .bar11{left:100%; animation-delay: 1s;}
 
 /* 애니메이션 */
 @keyframes load {
@@ -141,14 +163,14 @@ html,body{
 
 /* hello there / bg -모바일,타블릿 */
 @media (max-width: 767px) {
-
-  .maintext{width: 100%;}
+  /* main */
+  .maintext1{width: 50%;}
   /* bg 높이 */
-  .swiper-container,.parallax-bg{
+  .star, .parallax-bg{
     height: 500px;
   }
 
-  .swiper-container.star_swiper{
+  .star{
     height: 600px;
   }
 
