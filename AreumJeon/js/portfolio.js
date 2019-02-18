@@ -26,7 +26,7 @@ $(window).scroll(function(){
   $('nav li').eq(index).find('p').addClass('on');
 
   //네비게이션 a-100지점에 고정시키기
-  if(windowTop>=(a-1500)){
+  if(windowTop>=(a-1000)){
     $('header').addClass('fixed');
     $('.nav button').addClass('fixed');
     $('#goTop').addClass('on');
@@ -54,13 +54,13 @@ $('nav a').click(function(e){
   }
 })
 
-$(function(){
-  $('.real').click(function(){
-    $('html,body').stop().animate({
-      scrollTop:$('.real_img').offset().top-2000
-    },1000,'easeInOutElastic');
-  })
-})
+// $(function(){
+//   $('.real').click(function(){
+//     $('html,body').stop().animate({
+//       scrollTop:$('.real_img').offset().top-2000
+//     },1000,'easeInOutElastic');
+//   })
+// })
 
 // 모바일 환경에서의 네이게이션 모습
 $(function(){
@@ -115,22 +115,12 @@ $('.intro button').click(function(){
 
 // 스와이퍼 슬라이드 ===================================================
 var swiper = new Swiper('.swiper-container', {
-
-      // auto:true,
-      speed:1000,
-      mousewheelControl: false,
-      keyboardControl: true,
-      autoplay:false,
-      centeredSlides: true,
-
-      effect: "slide",
-      direction: 'vertical',
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: false,
-            },
+      // spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
     });
-
 
 
 
