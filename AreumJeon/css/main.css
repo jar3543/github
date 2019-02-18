@@ -156,12 +156,10 @@ html,body{
 /* mobile ====================================================================*/
 @media (max-width: 767px) {
   /* main */
-  .maintext1{width: 50%;}
-  /* bg 높이 */
   .star, .parallax-bg{height: 500px;}
   .star{height: 735px;}
   .star .parallax-bg.main_parallax_bg{margin-top: 135px;}
-  .maintext1{top: 50px;}
+  .maintext1{width: 50%;top: 50px;}
   .maintext2{padding-top: 150px;}
 
 }
