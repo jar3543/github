@@ -3,7 +3,7 @@
 /* 로딩 */
 .bg{
   position: fixed;
-  /* width:100%; height: 100%; */
+  width:100%; height: 100%;
   left:0; right:0; top:0; bottom:0;
   /* background: linear-gradient(45deg, #0f8, #08f); */
   background: rgb(50, 60, 83);
@@ -19,12 +19,12 @@
   font-family: sans-serif;
   z-index: 10000;
 }
-.loading h1{
+/* .loading h1{
   color:#fff; letter-spacing: 10px;
   font-weight: normal;
   font-size:15px;
   text-align: center;
-}
+} */
 .loading div{
   width:80px; height: 80px;
   border: 10px solid #fff;

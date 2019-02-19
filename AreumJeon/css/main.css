@@ -16,9 +16,9 @@ html,body{
   position: absolute;
   left:50%;
   top:0;
-  width:80%;
-  height: 450px;
-  margin-top: 85px;
+  width:100%;
+  height: 680px;
+  margin-top: 0;
   /* 백그라운드 그라데이션 적용 */
   background: #282537;
   background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
@@ -104,7 +104,7 @@ html,body{
   margin-left:-5px;
   animation: load 1.5s infinite;
   font-size: 14px;
-  color:#000;
+  color:#fff;
 }
 .maintext1 .bar1{left:0%;}
 .maintext1 .bar2{left:10%; animation-delay: 0.1s;}
@@ -157,9 +157,9 @@ html,body{
 /* mobile ====================================================================*/
 @media (max-width: 767px) {
   /* main */
-  .star, .parallax-bg{height: 500px;}
-  .star{height: 735px;}
-  .star .parallax-bg.main_parallax_bg{margin-top: 135px;}
+  .star{height: 795px;}
+  /* .parallax-bg{height: 500px;} */
+  .star .parallax-bg.main_parallax_bg{height: 736px;}
   .maintext1{width: 50%;top: 50px;}
   .maintext2{padding-top: 150px;}
 

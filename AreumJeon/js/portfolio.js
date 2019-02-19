@@ -18,12 +18,12 @@ $(window).scroll(function(){
     index=4;
   }
 
-  $('nav li a').removeClass('active');
-  $('nav li').eq(index).find('a').addClass('active');
+  $('.nav ul li a').removeClass('active');
+  $('.nav ul li').eq(index).find('a').addClass('active');
 
   // p (네비 : on 으로 보여주기)
-  $('nav li p').removeClass('on');
-  $('nav li').eq(index).find('p').addClass('on');
+  $('.nav ul li p').removeClass('on');
+  $('.nav ul li').eq(index).find('p').addClass('on');
 
   //네비게이션 a-100지점에 고정시키기
   if(windowTop>=(a-1000)){
@@ -42,7 +42,7 @@ $(window).scroll(function(){
 })//scroll 이벤트 종료==========================================================
 
 // 네비게이션 메뉴 눌럿을 때 해당 컨텐츠로 이동하기
-$('nav a').click(function(e){
+$('.nav ul li a').click(function(e){
   if(this.hash !==""){
   e.preventDefault();
   var hash=this.hash;
@@ -54,32 +54,24 @@ $('nav a').click(function(e){
   }
 })
 
-// $(function(){
-//   $('.real').click(function(){
-//     $('html,body').stop().animate({
-//       scrollTop:$('.real_img').offset().top-2000
-//     },1000,'easeInOutElastic');
-//   })
-// })
-
 // 모바일 환경에서의 네이게이션 모습
 $(function(){
-  $('.nav button').on('click',function(){
+  $('div.nav button').on('click',function(){
     // toggleClass에 클래스를 한개를 적용시키면 해당클래스가 들어간것과 없는것이 번갈아가면서 적용됨.
-    $('nav').toggleClass('on');
+    $('.nav').toggleClass('on');
     // $('nav').addClass('animated','fadeInright');
     // toggleClass에 클래스를 두개를 적용시키면 클래스가 번갈아가면서 적용됨.
     $(this).find('i').toggleClass('fa-bars fa-times');
   })
 })
 
-
 $(function(){
-  $('nav ul li').click(function(){
-    $('nav').toggleClass('on');
+  $('.nav ul li').click(function(){
+    $('.nav').toggleClass('on');
     $('.nav button').find('i').toggleClass('fa-bars fa-times');
   })
 })
+
 // 네비게이션 end===============================================================
 
 // home으로 가기
@@ -138,9 +130,9 @@ $(function(){
     //isotope 초기화
     var $grid=$('.grid').isotope();
     //카테고리 버튼 클릭시 필터링처리
-    $('#portfolio .nav li').on('click',function(e){
+    $('#portfolio .nav ul li').on('click',function(e){
       e.preventDefault();
-      $('#portfolio .nav li').removeClass('active');
+      $('#portfolio .nav ul li').removeClass('active');
       $(this).addClass('active');
       var sortValue=$(this).attr('data-sort-value');
       console.log(sortValue);
