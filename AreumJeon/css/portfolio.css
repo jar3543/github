@@ -520,6 +520,34 @@ section .box:nth-child(6){background: #fff;height: 800px;}
 #goDown:hover{transform: translate3d(0,10px,0);transition: transform 1s;}
 
 
+
+/* contact ==================================================================*/
+.contact_form a{
+  display: inline-block;
+  color: #FFFFFF;
+  border-radius: 30px;
+  width: 200px;
+  height: 50px;
+  padding: 13px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #c62d2d;
+  box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42),
+    0 4px 23px 0px rgba(0, 0, 0, 0.12),
+    0 8px 10px -5px rgba(153, 153, 153, 0.2);
+  transition: all 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact_form a:hover{
+  background-color: #e61a1a;
+  color: #fff;
+  transform: translate3d(0, -3px, 0);
+  box-shadow: 0 14px 26px -12px rgba(255, 23, 23, 0.42),
+    0 4px 23px 0px rgba(0, 0, 0, 0.12),
+    0 8px 10px -5px rgba(255, 23, 23, 0.2);
+}
+
+
 /* 푸터====================================================================== */
 footer{
   height: 150px;
@@ -629,6 +657,10 @@ footer small{
   .intro button{
   }
 
+/* section */
+section .box{margin-top: 0;}
+section .box:nth-child(6){margin-top: -100px;height: 350px;}
+
 /* slide */
   body > section{margin-top: -56px;}
    #slide .main_slide{height: 500px;}
@@ -655,7 +687,8 @@ footer small{
    section .box:nth-child(3){height: auto;}
 
 /* workprocess */
-   section .box:nth-child(4){height: auto;padding-bottom: 100px;}
+   section .box:nth-child(4){height: auto;}
+   #workprocess .container div.row{margin-bottom: 50px;}
 
 /* goTop, goDown */
 #goTop i, #goDown i{color: #c62d2d;}
