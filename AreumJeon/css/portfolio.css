@@ -660,25 +660,25 @@ footer small{
 
    /* nivigation */
    header .nav{
-    right: -250px;
-    width: 60%;
+    right: -200px;
+    /* width: 60%; */
     margin-top: -10px;
     z-index: 10;
     position: fixed;
     height: 100%;
     background: #424242;
     overflow: visible;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
     transition: all 0.5s;
    }
    .nav.on{
      right: 0;
+     box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
 
    }
    .nav button{
      display: block !important;
      position: absolute;
-     left: -49px;
+     left: -45px;
      width: 50px;
      height: 50px;
      font-size: 2em;
@@ -688,6 +688,7 @@ footer small{
      border: 0;
    }
    .nav ul{
+     width: 200px;
      padding-top: 70px;
    }
    header .nav ul li{
@@ -698,13 +699,13 @@ footer small{
    header nav ul li a.active::before{width: 50%;border-color: #fff;} */
 
 /* intro */
-  .intro{height: auto;}
+  .intro{height: auto;padding-top: 129px}
   .intro button{
     /* width: 55px;height: 55px; */
   }
 
 /* slide */
-  body > section{margin-top: -55px;}
+  body > section{margin-top: -56px;}
    #slide .main_slide{height: 500px;}
    .swiper-slide .parallax-bg{height: 500px;}
    .swiper-wrapper{height: 500px;}
