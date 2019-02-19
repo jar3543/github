@@ -489,8 +489,6 @@ section .box:nth-child(6){background: #fff;height: 800px;}
   height: 40px;
   font-size: 20px;
   border:0;
-  /* border-radius: 50px; */
-  /* background-color: rgba(0,0,0, 0.1); */
   background: none;
   z-index: 100;
   transition: opacity 0.5s;
@@ -511,8 +509,6 @@ section .box:nth-child(6){background: #fff;height: 800px;}
   height: 40px;
   font-size: 20px;
   border:0;
-  /* border-radius: 50px; */
-  /* background-color: rgba(0,0,0, 0.1); */
   background: none;
   transition: opacity 0.5s;
   z-index: 100;
