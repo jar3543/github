@@ -3,7 +3,7 @@ $(window).scroll(function(){
   var a=$('#about').offset().top;
   var b=$('#skill').offset().top;
   var c=$('#work').offset().top;
-  var d=$('#contact').offset().top;
+  var d=$('#contact').offset().top-100;
   var windowTop=$(window).scrollTop();
   console.log(a,b,c,d,windowTop);
 
@@ -41,26 +41,27 @@ $(window).scroll(function(){
 
 })//scroll 이벤트 종료==========================================================
 
+
+
 // 네비게이션 메뉴 눌럿을 때 해당 컨텐츠로 이동하기
 $('.nav ul li a').click(function(e){
   if(this.hash !==""){
   e.preventDefault();
   var hash=this.hash;
   $('html, body').animate({
-    scrollTop:$(hash).offset().top
+    scrollTop:$(hash).offset().top-100
   },800,function(){
     window.location.href=hash;
     });
   }
 })
 
-// 모바일 환경에서의 네이게이션 모습
+
+
+// 모바일 환경에서의 네이게이션 모습==============================================
 $(function(){
   $('div.nav button').on('click',function(){
-    // toggleClass에 클래스를 한개를 적용시키면 해당클래스가 들어간것과 없는것이 번갈아가면서 적용됨.
     $('.nav').toggleClass('on');
-    // $('nav').addClass('animated','fadeInright');
-    // toggleClass에 클래스를 두개를 적용시키면 클래스가 번갈아가면서 적용됨.
     $(this).find('i').toggleClass('fa-bars fa-times');
   })
 })
@@ -71,8 +72,9 @@ $(function(){
     $('.nav button').find('i').toggleClass('fa-bars fa-times');
   })
 })
+//end==========================================================================
 
-// 네비게이션 end===============================================================
+
 
 // home으로 가기
 $('#ha').click(function(){
@@ -105,7 +107,7 @@ $('.intro button').click(function(){
 
 
 
-// 스와이퍼 슬라이드 ===================================================
+// 슬라이드 ===========================================================
 var swiper = new Swiper('.swiper-container', {
       // spaceBetween: 30,
       pagination: {
@@ -113,6 +115,35 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
       },
     });
+//end==========================================================================
+
+
+// 슬라이드 버튼 클릭 시, 해당 컨텐츠로 스크롤 이동시키기
+$('.button_link1 a:nth-child(1)').click(function(){
+  $('html, body').animate({
+    scrollTop:$('#about').offset().top-100
+  },800);
+})
+
+$('.button_link1 a:nth-child(2)').click(function(){
+  $('html, body').animate({
+    scrollTop:$('#work').offset().top-90
+  },800);
+})
+
+$('.button_link2 a:nth-child(1)').click(function(){
+  $('html, body').animate({
+    scrollTop:$('#about').offset().top-100
+  },800);
+})
+
+$('.button_link2 a:nth-child(2)').click(function(){
+  $('html, body').animate({
+    scrollTop:$('#work').offset().top-90
+  },800);
+})
+
+
 
 
 
@@ -169,3 +200,10 @@ $(function(){
     searchCount();
 
   })
+
+
+// about_button 메세지 띄우기
+$('.about_button button').on('click',function(){
+  alert('준비중입니다.');
+  console.log('준비중입니다.');
+})
