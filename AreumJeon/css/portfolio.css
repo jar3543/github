@@ -497,7 +497,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 .item_category{color: #fff;font-size: 14px;line-height: 14px;opacity: 0;margin-left: 25px;
   transition: opacity 300ms,margin 300ms;text-align: left;}
 .item_wrap:hover .item_category{margin-left: 50px;opacity: .8;}
-a:focus, a:hover{color: #fff !important;}
+.overlay_background:focus, .overlay_background:hover{color: #fff !important;}
 
 
 /* work =======================================================================*/

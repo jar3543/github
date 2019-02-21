@@ -154,16 +154,14 @@ new WOW().init();
 $(function(){
   $('.html,body').css('.overflow','hidden');
 
-  //검색에 사용되는 정규표현식 변수
-  //*정규표현식 문자의 패턴을 정해서 그패턴에 맞는 걸 찾아내는 표현식
     var qsRegex;
 
     //isotope 초기화
     var $grid=$('.grid').isotope();
     //카테고리 버튼 클릭시 필터링처리
-    $('#portfolio .nav ul li').on('click',function(e){
+    $('#portfolio ul li').on('click',function(e){
       e.preventDefault();
-      $('#portfolio .nav ul li').removeClass('active');
+      $('#portfolio ul li').removeClass('active');
       $(this).addClass('active');
       var sortValue=$(this).attr('data-sort-value');
       console.log(sortValue);
@@ -171,35 +169,8 @@ $(function(){
       searchCount();//카테고리 클릭 시 검색 갯수 정렬
     })
 
-    //검색어 작성 후 검색버튼 누르면 필터링처리
-    $('#btn-search').on('click',function(){
-      var $quicksearch=$('.quicksearch').val();//텍스트입력창에 작성한 값을 얻는다.
-      // console.log($quicksearch);
 
-      qsRegex=new RegExp($quicksearch, 'gi');//grid안에 있는 문자를 전역에서 검색(대소문자 구분없이)
-      //gi : global, i:대소문자구분없이
-      //검색할 단어를 정규표현식과 일지치하는지 검사 후 일치하면 필터링 처리
-      $grid.isotope({filter:function(){
-        //삼황연산자 조건식?참일때수행할문장:거짓일때수행할문장
-        return qsRegex ? $(this).text().match(qsRegex):true;
-        //this -> grid를 가리킨다. text를 읽는다.
-      }})
-      $('.quicksearch').val('').focus();//다시 검색할 수 있도록 초기화하고 포커스 이동
-      searchCount();//검색한 갯수 보여주기
-    })
-
-    //작업물 총 수/검색한 수 구하기
-    //html(); ->태그를 포함하여 작성, text(); -> 문자
-    //text(); ->get , text('안녕하세요'); ->set
-    function searchCount(){
-      var iso = $('.grid').data('isotope');
-      $('.count').html('총 <span class="total">'+$('.grid .item').length+'</span>개'
-                        +'/검색 <span class="search">'+iso.filteredItems.length+'</span>개');
-    }
-    //처음에 한번만 호출
-    searchCount();
-
-  })
+})//end=======================================================================
 
 
 // about_button 메세지 띄우기
