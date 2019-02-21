@@ -177,7 +177,7 @@ section .box:nth-child(3){background: #fff;height: 600px;}
 /* workprocess */
 section .box:nth-child(4){background: #313131;height: 450px;}
 /* work */
-section .box:nth-child(6){background: #fff;height: 550px;}
+section .box:nth-child(6){background: #fff;height: 600px;}
 
 
 
@@ -385,7 +385,6 @@ section .box:nth-child(6){background: #fff;height: 550px;}
   font-family: 'Nanum Myeongjo', serif;
   /* font-family: 'Gothic A1', sans-serif; */
 }
-.aboutext_wrap .aboutext p span{font-weight: bold;}
 
 .about_button{
   position: absolute;
@@ -549,7 +548,9 @@ a:focus, a:hover{color: #fff !important;}
 
 
 /* contact ==================================================================*/
-.contact_info{padding-top: 50px;}
+.contact_info{padding-top: 30px;}
+.contact_info p{font-size: 24px;}
+.contact_info ul{padding-top: 30px;}
 .contact_info ul li{font-size: 24px;}
 .contact_info ul li i{padding-right: 10px;}
 .contact_form a{
@@ -688,7 +689,7 @@ footer small{
 
 /* section */
 section .box{margin-top: 0;}
-section .box:nth-child(6){margin-top: -100px;height: 500px;}
+section .box:nth-child(6){margin-top: -100px;height: 550px;}
 
 /* slide */
   body > section{margin-top: -56px;}
@@ -721,7 +722,9 @@ section .box:nth-child(6){margin-top: -100px;height: 500px;}
    #workprocess .container div.row{margin-bottom: 50px;}
 
 /* contact    */
-.contact_info{padding-top: 40px;}
+.contact_info{padding-top: 15px;}
+.contact_info p{font-size: 18px;}
+.contact_info ul li{font-size: 18px;}
 
 /* goTop, goDown */
 #goTop i, #goDown i{color: #c62d2d;}

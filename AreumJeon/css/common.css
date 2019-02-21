@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Gothic|Nanum+Myeongjo'); */
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Quicksand|Roboto');
-h4, h5, span, a, p{
+h4, h5, span, a, p, li{
   /* font-family: 'Do Hyeon', sans-serif !important; */
   /* font-family: 'Nanum Myeongjo', serif !important; */
   /* font-family: 'Montserrat', sans-serif; */
