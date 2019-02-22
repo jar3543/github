@@ -298,14 +298,15 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   top: 50%;
   transform: translateY(-50%);
 }
-.aboutext_wrap .aboutext p{
+.aboutext_wrap .aboutext p:nth-child(1){font-family: 'Indie Flower', cursive  !important;}
+.aboutext_wrap .aboutext p:nth-child(2){
   position: relative;
   height: auto;
   font-size: 16px;
   text-align: left;
   letter-spacing: 2px;
   line-height: 1.6;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Nanum Myeongjo', serif  !important;
   /* font-family: 'Gothic A1', sans-serif; */
 }
 
