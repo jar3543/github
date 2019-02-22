@@ -65,10 +65,11 @@
   position: absolute;
   transition: .3s;
   content: '';
-  width: 0;
   left: 50%;
   bottom: 0;
-  height: 3px;
-  background: #a21328;
+  width: 0;
+  height: 32px;
+  background: #2a283a;
+  opacity: .3;
 }
 .nav-pills>li>a:hover::after{width: 100%;left: 0;}

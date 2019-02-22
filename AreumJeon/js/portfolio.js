@@ -1,3 +1,40 @@
+// 슬라이드 ===========================================================
+var swiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+//end==========================================================================
+
+
+// 슬라이드 버튼 클릭 시, 해당 컨텐츠로 스크롤 이동시키기
+$('.button_link1 a:nth-child(1)').click(function(){
+  $('html, body').animate({
+    scrollTop:$('#about').offset().top-100
+  },800);
+})
+
+$('.button_link1 a:nth-child(2)').click(function(){
+  $('html, body').animate({
+    scrollTop:$('#work').offset().top-90
+  },800);
+})
+
+$('.button_link2 a:nth-child(1)').click(function(){
+  $('html, body').animate({
+    scrollTop:$('#about').offset().top-100
+  },800);
+})
+
+$('.button_link2 a:nth-child(2)').click(function(){
+  $('html, body').animate({
+    scrollTop:$('#work').offset().top-90
+  },800);
+})
+
+
+
 // 네비게이션===================================================================
 $(window).scroll(function(){
   var a=$('#about').offset().top;
@@ -104,45 +141,6 @@ $('.intro button').click(function(){
     scrollTop:$('#slide').offset().top-50
   },800);
 })
-
-
-
-// 슬라이드 ===========================================================
-var swiper = new Swiper('.swiper-container', {
-      // spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-//end==========================================================================
-
-
-// 슬라이드 버튼 클릭 시, 해당 컨텐츠로 스크롤 이동시키기
-$('.button_link1 a:nth-child(1)').click(function(){
-  $('html, body').animate({
-    scrollTop:$('#about').offset().top-100
-  },800);
-})
-
-$('.button_link1 a:nth-child(2)').click(function(){
-  $('html, body').animate({
-    scrollTop:$('#work').offset().top-90
-  },800);
-})
-
-$('.button_link2 a:nth-child(1)').click(function(){
-  $('html, body').animate({
-    scrollTop:$('#about').offset().top-100
-  },800);
-})
-
-$('.button_link2 a:nth-child(2)').click(function(){
-  $('html, body').animate({
-    scrollTop:$('#work').offset().top-90
-  },800);
-})
-
 
 
 

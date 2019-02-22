@@ -5,7 +5,52 @@ html,body{
   /* height: 100%; */
 }
 
-/* main ======================================================================*/
+
+/* 인트로 ====================================================================*/
+.intro{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background:none;
+  color: #000;
+  height: 200px;
+  align-items: center;
+  padding-top: 200px;
+  opacity: 0;
+}
+.intro button{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,50%);
+  width: 70px;
+  height: 70px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #000;
+  overflow: hidden;
+}
+.intro button i{font-size: 20px;color: #fff;}
+.intro button::after{
+  position: absolute;
+  background: #fff;
+  content: "";
+  top: -50px;
+  left: -87px;
+  width: 50px;
+  height: 178px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0.6;
+  z-index: -10;
+}
+.intro button:hover::after{
+  left: 186%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+/* star ======================================================================*/
 
 .star{
   width: 100%;
@@ -165,5 +210,10 @@ html,body{
   .star .parallax-bg.main_parallax_bg{height: 739px;}
   .maintext1{width: 50%;top: 50px;}
   .maintext2{padding-top: 150px;}
+
+  /* intro */
+    .intro{height: auto;padding-top: 129px}
+    .intro button{
+    }
 
 }

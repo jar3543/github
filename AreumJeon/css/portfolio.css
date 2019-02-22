@@ -1,66 +1,25 @@
 @charset "UTF-8";
 
-/* 인트로 ====================================================================*/
-.intro{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  background:none;
-  color: #000;
-  height: 200px;
-  align-items: center;
-  padding-top: 200px;
-}
-.intro button{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%,50%);
-  width: 70px;
-  height: 70px;
-  background: none;
-  border: none;
-  font-size: 1.5em;
-  color: #000;
-  overflow: hidden;
-}
-.intro button i{font-size: 20px;color: #fff;}
-.intro button::after{
-  position: absolute;
-  background: #fff;
-  content: "";
-  top: -50px;
-  left: -87px;
-  width: 50px;
-  height: 178px;
-  transform: rotate(35deg);
-  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  opacity: 0.6;
-  z-index: -10;
-}
-.intro button:hover::after{
-  left: 186%;
-  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-
 /* 헤더 ====================================================================*/
 header{
   background-color: #252334;
   padding: 10px 0;
   height: 85px;
   display: none !important;
+  opacity: 0;
 }
 header.fixed{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.13);
+  background-color: rgb(42, 40, 58);
   z-index: 999999;
   width: 100%;
   height: 85px;
   line-height: 62px;
   display: block !important;
+  opacity: 1;
 }
 header .container{
   position: relative;
@@ -70,7 +29,6 @@ header .container{
 }
 
 /* 로고 */
-header .container h1.logo a{}
 header .logo a{
   float: left;
   color: #fff;
@@ -78,6 +36,7 @@ header .logo a{
   line-height: 60px;
   text-decoration: none;
   letter-spacing: 0px;
+  margin-top: 6px;
   transition: all 280ms ease-in-out;
  }
 header .logo a:hover{letter-spacing: 2px;}
@@ -108,8 +67,7 @@ header .nav ul li a{
 header .nav ul li a:hover{text-decoration: none;}
 header .nav ul li a.active{
   background: none;
-  font-weight: bold;
-  color: #000;
+  color: #fff;
   letter-spacing: 3px;
 }
 header .nav ul li a::after,
@@ -134,13 +92,13 @@ header .nav ul li a:hover::before{
 header .nav ul li a.active::after,
 header .nav ul li a.active::before{
   backface-visibility: hidden;
-  border-color: #000;
+  border-color: #fff;
   transition: width 350ms ease-in-out;
   width: 90%;
 }
 header .nav ul li a.active:hover::after,
 header .nav ul li a.active:hover::before{
-  border-color: #000;
+  border-color: #fff;
 }
 header .nav ul li a:hover{letter-spacing: 3px;}
 
@@ -157,7 +115,8 @@ header .nav ul li a:hover{letter-spacing: 3px;}
 #slide > h2, .container > h2{
   font-size: 14px;
   font-weight: bold;
-  color: #c62d2d;
+  /* color: #c62d2d; */
+  color: #000;
   margin: 50px 0;
   padding-top: 50px;
   letter-spacing: 3px;
@@ -172,10 +131,12 @@ section .box{
 }
 /* 슬라이드 */
 section .box:nth-child(1){background: #fff; margin-top: 0;}
+/* about */
+section .box:nth-child(2){margin-top: 0;}
 /* skill what i can do*/
 section .box:nth-child(3){background: #fff;height: 600px;}
 /* workprocess */
-section .box:nth-child(4){background: #313131;height: 450px;}
+section .box:nth-child(4){height: 450px;}
 /* work */
 section .box:nth-child(6){background: #fff;height: 600px;}
 
@@ -189,15 +150,6 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   height: 600px;
 }
 /* 스와이퍼 슬라이드 백그라운드 설정 */
-.swiper-slide .parallax-bg{
-  position: absolute;
-  left:0; top:0;
-  width:100%;
-  height: 600px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: bottom;
-}
 .swiper-wrapper{height:600px;}
 .swiper-slide{
   /* 세피아 처리 */
@@ -212,7 +164,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 
 
 /* slide */
-#slide{width: 100%;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);}
+#slide{width: 100%;}
 
 /* main swiper slide */
 .main_slide div.swiper-wrapper .swiper-slide {
@@ -264,10 +216,10 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
 }
 .button_link1 a{
-  color: #000;
+  color: #fff;
   padding: 15px 30px;
   font-size: 18px;
-  background: #fff;
+  background: #000;
   border-radius: 30px;
   transition: all 1s ease-in-out;
 }
@@ -290,11 +242,11 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 .button_link2 a{
   display: block;
   width: 70%;
-  color: #000;
+  color: #fff;
   font-size: 18px;
   padding: 15px 30px;
   margin: 10px;
-  background-color: #fff;
+  background-color: #000;
   border-radius: 30px;
   transition: all 1s ease-in-out;
 }
@@ -308,17 +260,15 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 
 
 /* 페이지네이션 재정비*/
-.swiper-pagination-bullet-active{background: #000 !important;}
-.swiper-pagination-bullet{border-radius: 0 !important;}
-.swiper-pagination-bullet{width: 20px !important;height: 20px !important;}
-
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{background-image: none !important ;}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{background-image: none !important;}
 
 /* 첫번째 슬라이드 */
 .slide_text{
   position: relative;
   width: 1100px;
   font-size: 36px;
-  color: #fff;
+  color: #000;
   letter-spacing: 10px;
   margin: 0 auto;
   opacity: 0;
@@ -335,35 +285,8 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 .swiper-slide.swiper-slide-active .button_link1{opacity: 1;transform: translate3d(0,0,0);}
 
 
-/* 두번째 슬라이드 */
-.slide_logo{
-  position: absolute;
-  left: 0;
-  width: 400px;
-  margin-left: 400px;
-  opacity: 0;
-  z-index: 1000;
-}
-.swiper-slide .slide_logo{opacity: 0;transform: translate3d(-20%,0,0);
-  transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;}
-/* 텍스트 애니메이션 */
-.swiper-slide.swiper-slide-active .slide_logo{opacity: 1;transform: translate3d(0,0,0);}
-.main_slide .slide_two .slide_logo img{
-  width: 100px;
-  float: left;
-  margin-left: 20px;
-  margin-bottom: 40px;
-}
-.main_slide .slide_two .slide_logo img:nth-child(1){margin-left: 40px;}
-.main_slide .slide_two .slide_logo img:nth-child(4){clear: both;margin-left: 100px;}
-.main_slide .slide_two .slide_logo img:nth-child(5){margin-top: 15px;}
-.main_slide .slide_two .slide_logo img:nth-child(6){clear: both;margin-left: 80px;}
-.main_slide .slide_two .slide_logo img:nth-child(7){margin-left: 50px;}
-
-
 
 /* about =====================================================================*/
-#about{}
 #about .container > p{font-size: 14px;color: #aaa5a5;margin-top: -50px;}
 .about_img img{width: 250px;}
 .about_img{position: relative;height: 100%;}
@@ -393,7 +316,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   padding: 0 100px;
 }
 .about_button > button{
-  color: #ff0000a3;
+  color: #e5e5e5;
   font-size: 14px;
   padding: 10px 20px;
   padding-right: 28px;
@@ -404,7 +327,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   transition: opacity 0.1s ease, padding 0.1s ease;
 }
 .about_button > button:hover{
-  color: #c62d2d;
+  color: #515b8f;
   opacity: 1;
   padding: 10px 20px;
 }
@@ -426,7 +349,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 }
 .about_button button:hover::after{
   width: 82px;
-  color: #c62d2d;
+  color: #515b8f;
   margin-left: -13px;
   padding-top: 8px;
   opacity: 1;
@@ -486,7 +409,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 
 /* workprocess=============================================================== */
 #workprocess img{margin-bottom: 30px;margin-top: 40px;}
-#workprocess h4{color: #fff;font-size: 18px;margin: 10px 0;}
+#workprocess h4{color: #000;font-size: 18px;margin: 10px 0;}
 .overlay_background{height: 100%;width: 100%;position: absolute;top: 0;left: 0;
   background-color: rgba(0, 0, 0, 0.38);opacity: 0;transition: opacity 300ms;}
 .item_wrap:hover .overlay_background{opacity: 1;}
@@ -524,7 +447,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   visibility: visible;
   opacity: 1;
 }
-#goTop i{color: #c62d2d;}
+#goTop i{color: #515b8f;}
 #goDown{
   visibility: hidden;
   opacity: 0;
@@ -540,7 +463,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   z-index: 100;
 }
 #goDown.on{visibility: visible;opacity: 1;}
-#goDown i{color: #c62d2d;}
+#goDown i{color: #515b8f;}
 
 #goTop:hover{transform: translate3d(0,-10px,0);transition: transform 1s;}
 #goDown:hover{transform: translate3d(0,10px,0);transition: transform 1s;}
@@ -562,20 +485,20 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   padding: 13px;
   font-size: 14px;
   font-weight: 500;
-  background-color: #c62d2d;
-  box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42),
-    0 4px 23px 0px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(153, 153, 153, 0.2);
+  background-color: #333146;
+  box-shadow: 0 14px 26px -12px rgba(70, 77, 144, 0.42),
+  0 4px 23px 0px rgba(0, 0, 0, 0.12),
+  0 8px 10px -5px rgba(8, 55, 255, 0.2);
   transition: all 0.2s cubic-bezier(0.4, 0, 1, 1),
     background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact_form a:hover{
-  background-color: #e61a1a;
+  background-image: linear-gradient(to right, rgb(50, 51, 102) , rgb(101, 67, 111));
   color: #fff;
   transform: translate3d(0, -3px, 0);
-  box-shadow: 0 14px 26px -12px rgba(255, 23, 23, 0.42),
-    0 4px 23px 0px rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(255, 23, 23, 0.2);
+  box-shadow: 0 14px 26px -12px rgba(28, 68, 125, 0.42),
+  0 4px 23px 0px rgba(0, 0, 0, 0.12),
+  0 8px 10px -5px rgba(98, 95, 99, 0.6);
 }
 
 
@@ -631,6 +554,7 @@ footer small{
     top: 0;
     background: #efefed;
     display: block !important;
+    opacity: 1;
   }
   header.fixed{
     height: 70px;
@@ -682,10 +606,6 @@ footer small{
      border-color: #fff;
    }
 
-/* intro */
-  .intro{height: auto;padding-top: 129px}
-  .intro button{
-  }
 
 /* section */
 section .box{margin-top: 0;}
@@ -694,7 +614,6 @@ section .box:nth-child(6){margin-top: -100px;height: 550px;}
 /* slide */
   body > section{margin-top: -56px;}
    #slide .main_slide{height: 500px;}
-   .swiper-slide .parallax-bg{height: 500px;}
    .swiper-wrapper{height: 500px;}
    .slide_logo{margin-left: 10px;}
    .main_slide .slide_two .slide_logo img:nth-child(1),
@@ -725,9 +644,6 @@ section .box:nth-child(6){margin-top: -100px;height: 550px;}
 .contact_info{padding-top: 15px;}
 .contact_info p{font-size: 18px;}
 .contact_info ul li{font-size: 18px;}
-
-/* goTop, goDown */
-#goTop i, #goDown i{color: #c62d2d;}
 
 
 

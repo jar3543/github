@@ -5,11 +5,10 @@
   position: fixed;
   width:100%; height: 100%;
   left:0; right:0; top:0; bottom:0;
-  /* background: linear-gradient(45deg, #0f8, #08f); */
-  background: rgb(50, 60, 83);
+  background: #2f2e2e;
   filter:hue-rotate(0deg);
   animation: hue 10000ms infinite linear;
-  z-index: 9999;
+  z-index: 100000;
 }
 .loading{
   position: absolute;
@@ -19,12 +18,6 @@
   font-family: sans-serif;
   z-index: 10000;
 }
-/* .loading h1{
-  color:#fff; letter-spacing: 10px;
-  font-weight: normal;
-  font-size:15px;
-  text-align: center;
-} */
 .loading div{
   width:80px; height: 80px;
   border: 10px solid #fff;
@@ -36,7 +29,7 @@
 .loading .dot{
   width:10px; height: 10px;
   border-radius: 50%;
-  background: #0f8;
+  background: #2e3254;
   display: inline-block;
   position: absolute;
   animation: hue 10000ms infinite linear;
