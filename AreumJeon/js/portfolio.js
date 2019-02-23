@@ -26,7 +26,7 @@ $(window).scroll(function(){
   $('.nav ul li').eq(index).find('p').addClass('on');
 
   //네비게이션 a-100지점에 고정시키기
-  if(windowTop>=(a-1000)){
+  if(windowTop>=(a-100)){
     $('header').addClass('fixed');
     $('.nav button').addClass('fixed');
     $('#goTop').addClass('on');

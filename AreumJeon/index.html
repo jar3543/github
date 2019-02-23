@@ -92,7 +92,7 @@
         <!-- about ==============================================================-->
           <article id="about" class="box">
             <div class="container">
-              <h2 class="wow fadeInUp animated"><a href="#">ABOUT ME</a></h2>
+              <h2 class="wow fadeInUp animated"><a href="#" class="wow fadeInUp animated">ABOUT ME</a></h2>
               <p class="wow fadeInUp animated" data-wow-delay="1s">I am areum Jeon</p>
               <div class="col-xs-12 col-sm-6 col-md-6 about_img wow fadeInUp animated">
                 <img class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="3s" src="images/about.png" alt="일러스트 이미지">
@@ -116,7 +116,7 @@
           </article>
 
         <!-- skill ==========================================================-->
-        <article id="skill" class="box">
+        <article id="skill" class="box sec-2">
           <div class="container">
             <h2 class="wow fadeInUp animated"><a href="#">WHAT I CAN DO</a></h2>
             <p class="wow fadeInUp animated" data-wow-delay="1s">I am web publisher</p>
@@ -124,12 +124,12 @@
               <div class="row">
                 <div id="skill_hover" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hover_wrap">
                   <div class="skill_border">
-                    <div class="wow zoomIn animated">
+                    <div class="">
                       <span class="chart" data-percent="80">
                     		<span class="percent"></span>
                     	</span>
                     </div>
-                    <h3 class="wow fadeInUp animated"><strong>PHOTOSHOP & ILLUSTRATOR</strong></h3>
+                    <h3 class=""><strong>PHOTOSHOP & ILLUSTRATOR</strong></h3>
                       <span class="skill_text">웹 및 앱 디자인<br>
                       원하는 디자인을 자유롭게 구현</span>
                     </h3>
@@ -139,7 +139,7 @@
                 </div>
                 <div id="skill_hover" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hover_wrap">
                   <div class="skill_border">
-                    <div class="wow zoomIn animated">
+                    <div class="">
                       <span class="chart" data-percent="90">
                         <span class="percent"></span>
                       </span>
@@ -156,7 +156,7 @@
                 </div>
                 <div id="skill_hover" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hover_wrap">
                   <div class="skill_border">
-                    <div class="wow zoomIn animated">
+                    <div class="">
                       <span class="chart" data-percent="75">
                         <span class="percent"></span>
                       </span>
@@ -307,6 +307,49 @@
     <script src="js/loading.js"></script>
     <script src="js/portfolio.js"></script>
     	<script>
+      // var arrChartColor = ['#3325B0', '#3325B0', '#3325B0', '#3325B0', '#3325B0', '#3325B0'];
+			// $('.chart').each(function(idx, element) {
+			// 	$(element).easyPieChart({
+			// 		easing: 'easeOutBounce',
+			// 		barColor: arrChartColor[idx],
+			// 		trackColor: '#fff',
+			// 		lineWidth: 20,
+			// 		lineCap: 'square',
+			// 		scaleColor: '#666',
+			// 		size: 200,
+			// 		animate: 2000,
+			// 		onStep: function(from, to, percent) {
+			// 			$(this.el).find('.percent').text(Math.round(percent));
+			// 		}
+			// 	});
+      //
+			// });
+
+			// var chartBool = true;
+			// win.on('scroll', function() {
+			// 	var ts = $(this);
+			// 	var sct = ts.scrollTop();
+			// 	var s2 = $('.sec-2');
+			// 	var s2OffsetTop = s2.offset().top;
+      //
+			// 	if (sct >= s2OffsetTop - 100 && sct <= s2OffsetTop + 200) {
+			// 		if (chartBool) {
+			// 			$('.chart').each(function(idx, element) {
+			// 				var num = $(element).attr('data-percent');
+			// 				$('.chart').eq(idx).data('easyPieChart').disableAnimation().update(0).enableAnimation().update(num);
+      //
+			// 			});
+      //
+			// 			chartBool = false;
+			// 		}
+			// 	} else {
+			// 		chartBool = true;
+			// 	}
+			// });
+
+
+
+
     	$(function() {
     		$('.chart').easyPieChart({
     			easing: 'easeOutBounce',
@@ -319,6 +362,69 @@
     			chart.update(Math.random()*200-100);
     		});
     	});
+
+      $(document).ready(function(){
+        $('.chart').each(function() {
+          $(this).animate({
+            width:$(this).attr('data-percent')
+          },2000);
+
+          $(this).animate(
+            {left:$(this).attr('data-percent')},
+            {
+             duration: 2000,
+             step: function(now) {
+               var data = Math.round(now);
+               $(this).find('.percent').html(data);
+             }
+          });
+        });
+      });
+
+      // $(function(){
+      //
+      //
+      //     $(window).scroll(function(){
+      //
+      //         //update instance after 5 sec
+      //         if($(window).scrollTop() > $(window).height() + 1500) {
+      //           //create instance
+      //           $('.chart').easyPieChart({
+      //               animate: 2000
+      //           });
+      //         }
+      //     });
+      // });
+
+      // window.addEventListener('DOMContentLoaded', function() {
+      //   var charts = [];
+      //   [].forEach.call(document.querySelectorAll('.chart'),  function(el) {
+      //     charts.push(new EasyPieChart(el, options));
+      //   });
+      // });
+
+
+
+    //   $(function() {
+    //     $('.chart').easyPieChart({
+    //         //your options goes here
+    //         animate:{
+    //             duration:1000,
+    //             enabled:true
+    //         },
+    //     });
+    // });
+
+//     $(function() {
+//     // instantiate the plugin
+//     // update
+//     // $('.chart').data('easyPieChart').update(40);
+//     // disable animation
+//     // $('.chart').data('easyPieChart').disableAnimation();
+//     // enable animation
+//     // $('.chart').data('easyPieChart').enableAnimation();
+// });
+
     	</script>
   </body>
 </html>
