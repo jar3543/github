@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/* article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
-  display: block;
-} */
 #portfolio .nav{margin-bottom:20px;}
 #portfolio .list-unstyled{margin-bottom:0;}
 #portfolio .list-unstyled li:last-child .progress{margin-bottom:0;}
@@ -38,10 +35,7 @@
 
 /* 포트폴리오 카테고리 */
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-  /* background-color: #ececec !important; */
   background-color: #fff !important;
-  /* border: 2px solid #ececec !important; */
-  /* border-bottom: 2px solid #653165; */
   color: #000 !important;
   font-size: 14px;
   font-weight: bold;
@@ -54,7 +48,6 @@
   flex: 1 1 auto;
   margin: 10px;
   padding: 20px !important;
-  /* border: 2px solid #f7f7f7; */
   text-align: center !important;
   text-transform: uppercase;
   position: relative !important;

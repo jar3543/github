@@ -52,35 +52,6 @@ var swiper = new Swiper('.swiper-container', {
 //end==========================================================================
 
 
-// 슬라이드 버튼 클릭 시, 해당 컨텐츠로 스크롤 이동시키기
-$('.button_link1 a:nth-child(1)').click(function(){
-  $('html, body').animate({
-    scrollTop:$('#about').offset().top-100
-  },800);
-})
-
-$('.button_link1 a:nth-child(2)').click(function(){
-  $('html, body').animate({
-    scrollTop:$('#work').offset().top-90
-  },800);
-})
-
-$('.button_link2 a:nth-child(1)').click(function(){
-  $('html, body').animate({
-    scrollTop:$('#about').offset().top-100
-  },800);
-})
-
-$('.button_link2 a:nth-child(2)').click(function(){
-  $('html, body').animate({
-    scrollTop:$('#work').offset().top-90
-  },800);
-})
-
-
-
-
-
 
 // 네비게이션 메뉴 눌럿을 때 해당 컨텐츠로 이동하기
 $('.nav ul li a').click(function(e){
@@ -140,7 +111,7 @@ $('#goDown').click(function(){
 // 아래로 클릭 시, 메인 슬라이드 보여주기
 $('.intro button').click(function(){
   $('html, body').animate({
-    scrollTop:$('#slide').offset().top-50
+    scrollTop:$('#about').offset().top-50
   },800);
 })
 

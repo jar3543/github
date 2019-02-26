@@ -47,7 +47,6 @@ header .logo{margin-top: -7px;}
 /* 네비게이션 ================================================================*/
 header .nav{
   right: 0;
-  /* padding-left: 752px; */
   top: 7px;
   overflow: hidden;
   position: absolute;
@@ -109,7 +108,7 @@ header .nav ul li a:hover{letter-spacing: 3px;}
 .nav button{display: none;}
 
 
-/* 컨테이너 태그===============================================================*/
+/* 컨테이너 ===============================================================*/
 .container{max-width: 1200px;margin: auto;position: relative;
   margin-bottom: 100px;height: 100%;}
 /* h2 =============*/
@@ -128,6 +127,7 @@ header .nav ul li a:hover{letter-spacing: 3px;}
   background-position: 0 0.1em;transition: background 3s;}
 .container:hover > h2 a{background-size: 100% 100%;background-position: 0 0.1em;
   color: #000;}
+
 
 
 /* 컨텐츠 ====================================================================*/
@@ -272,12 +272,10 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   margin: 0 auto;
   opacity: 0;
   transform: translate3d(-20%,0,0);
-  /* -mz-transform-origin-x: -20%; */
   transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
   }
 .swiper-slide.swiper-slide-active .slide_text{opacity: 1;transform: translate3d(0,0,0);}
 .swiper-slide.swiper-slide-active .slide_text p{
-  /* font-family: 'Inconsolata', monospace; */
   font-family: 'Nanum Gothic Coding', monospace;
 }
 .main_slide > div > .slide_one > p{color: #fff;font-size: 40px;}
@@ -307,7 +305,6 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   letter-spacing: 2px;
   line-height: 1.6;
   font-family: 'Nanum Myeongjo', serif  !important;
-  /* font-family: 'Gothic A1', sans-serif; */
 }
 
 .about_button{
@@ -376,6 +373,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   font-weight: 700;
   letter-spacing: 1px;
   border: none;
+  padding-left: 60px;padding-right: 60px;
   font-size: 14px;
   outline: none;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -406,7 +404,6 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   height: 30px;
   transition: all .5s ease-in-out;
 }
-
 
 /* workprocess=============================================================== */
 #workprocess img{margin-bottom: 30px;margin-top: 40px;}
@@ -440,6 +437,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   font-size: 20px;
   border:0;
   background: none;
+  cursor: pointer;
   z-index: 100;
   transition: opacity 0.5s;
 
@@ -459,6 +457,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   height: 40px;
   font-size: 20px;
   border:0;
+  cursor: pointer;
   background: none;
   transition: opacity 0.5s;
   z-index: 100;
@@ -472,18 +471,20 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 
 
 /* contact ==================================================================*/
-.contact_info{margin-bottom: 57px;}
+.contact_info{margin-bottom: 90px;}
 .contact_info p{font-size: 12px;}
+.contact_info p:nth-child(1){letter-spacing: 1px;}
 .contact_info ul{position: absolute;padding-top: 35px;right: 50%;
   transform: translate(50%,0);}
-.contact_info ul li{float: left;font-size: 14px;margin-right: 10px;}
+.contact_info ul li{float: left;font-size: 14px;}
+.contact_info ul li:nth-child(1){margin-right: 70px;}
 .contact_info ul li i{padding-right: 10px;}
 .contact_form{margin-bottom: 30px;}
 .contact_form a{
   display: inline-block;
   color: #FFFFFF;
   border-radius: 30px;
-  width: 200px;
+  width: 330px;
   height: 50px;
   padding: 13px;
   font-size: 14px;
@@ -618,7 +619,6 @@ section .box:nth-child(6){margin-top: -100px;height: 550px;}
 
 .container > h2 a{position: relative;display: inline-block;flex: 1;
   background: #f3f377;color: #000;
-  /* background-image: linear-gradient(to right, #f3f377 0, #f3f377 100%); */
   background-size: 0 100%;background-repeat: no-repeat;
   background-position: 0 0.1em;}
 
@@ -653,10 +653,13 @@ section .box:nth-child(6){margin-top: -100px;height: 550px;}
    #workprocess .container div.row{margin-bottom: 50px;}
 
 /* contact    */
-.contact_info{padding-top: 15px;margin-bottom: 85px;}
+.contact_info{padding-top: 15px;margin-bottom: 120px;}
 .contact_info p{font-size: 14px;}
 .contact_info ul li{font-size: 18px;}
 .contact_info ul li:nth-child(2){margin-left: 15px;}
+.contact_info ul li:nth-child(1){margin-right: 0;}
+
+.contact_form a{width: 300px;}
 
 
 
