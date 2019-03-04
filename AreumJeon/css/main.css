@@ -1,0 +1,219 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+html,body{
+  position: relative;
+  /* height: 100%; */
+}
+
+
+/* 인트로 ====================================================================*/
+.intro{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background:none;
+  color: #000;
+  height: 200px;
+  align-items: center;
+  padding-top: 200px;
+  opacity: 0;
+}
+.intro button{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,50%);
+  width: 70px;
+  height: 70px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #000;
+  overflow: hidden;
+}
+.intro button i{font-size: 20px;color: #fff;}
+.intro button::after{
+  position: absolute;
+  background: #fff;
+  content: "";
+  top: -50px;
+  left: -87px;
+  width: 50px;
+  height: 178px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0.6;
+  z-index: -10;
+}
+.intro button:hover::after{
+  left: 186%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+/* star ======================================================================*/
+
+.star{
+  width: 100%;
+  height: 662px;
+  background: #efefed;
+}
+.star .parallax-bg.main_parallax_bg{
+  position: absolute;
+  left:50%;
+  top:0;
+  width:100%;
+  height: 680px;
+  margin-top: 0;
+  /* 백그라운드 그라데이션 적용 */
+  background: #282537;
+  background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  overflow: hidden;
+  transform: translate3d(-50%,0,0) !important;
+}
+.star .parallax-bg.main_parallax_bg a{
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  background: #fff;
+  animation-delay: 2s;
+  filter: blur(1px);
+  transition: all 2s;
+  animation: even 2s infinite alternate;
+}
+.star .parallax-bg.main_parallax_bg a:nth-child(odd){
+  width: 2px;height: 2px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0.5px blue;
+  transition: all 2s;
+  animation: odd 2s infinite alternate;
+  /* animation: size 3s infinite alternate; */
+}
+.star .parallax-bg.main_parallax_bg a:nth-child(10n){
+  width: 5px;height: 5px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 30px 1px blue;
+  transition: all 1s;
+  animation: odd 5s infinite alternate;
+}
+.star .parallax-bg.main_parallax_bg a:nth-child(3n+2){
+  width: 1px;
+  height: 1px;
+  background: #fff;
+  filter: blur(0px);
+}
+.star .parallax-bg.main_parallax_bg a:nth-child(50n){
+  width: 5px;height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 0px 20px 1px white;
+  filter: blur(0px);
+  opacity: 1;
+}
+
+/* 반짝이는 효과주기 */
+@keyframes odd {
+  0%,100%{opacity: 0;}
+  10%{opacity: .3;background: yellow;}
+  50%{opacity: .1;}
+  80%{opacity: .5;}
+}
+
+@keyframes even {
+  0%,100%{opacity: 1;}
+  /* 10%{opacity: .1;background: blue;} */
+  50%{opacity: 0;}
+  80%{opacity: .9;box-shadow: 0px 0px 20px 0.5px blue;}
+  90%{opacity: 0;box-shadow: 0px 0px 20px 0.5px blue;}
+}
+/* main star end ============================================================*/
+
+
+
+/* miantext */
+
+.maintext1{
+  position: relative;
+  top:15%; left:50%; height: 150px;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  opacity: 0;
+}
+.maintext1 div{
+  position: absolute;
+  bottom:0;
+  margin-left:-5px;
+  animation: load 1.5s infinite;
+  font-size: 14px;
+  color:#fff;
+}
+.maintext1 .bar1{left:0%;}
+.maintext1 .bar2{left:10%; animation-delay: 0.1s;}
+.maintext1 .bar3{left:20%; animation-delay: 0.2s;}
+.maintext1 .bar4{left:30%; animation-delay: 0.3s;}
+.maintext1 .bar5{left:40%; animation-delay: 0.4s;}
+.maintext1 .bar6{left:50%; animation-delay: 0.5s;}
+.maintext1 .bar7{left:60%; animation-delay: 0.6s;}
+.maintext1 .bar8{left:70%; animation-delay: 0.7s;}
+.maintext1 .bar9{left:80%; animation-delay: 0.8s;}
+.maintext1 .bar10{left:90%; animation-delay: 0.9s;}
+.maintext1 .bar11{left:100%; animation-delay: 1s;}
+
+/* 애니메이션 */
+@keyframes load {
+  0%{transform: translateY(0px);}
+  33%{transform: translateY(24px); font-size: 20px;}
+  66%{transform: translateY(-16px);}
+  88%{transform: translateY(4px);}
+  100%{transform: translateY(0px);}
+}
+
+@keyframes hue {
+  0%{filter: hue-rotate(0deg);}
+  100%{filter: hue-rotate(360deg);}
+}
+
+.bounce{animation: bounce 1s infinite alternate;}
+@keyframes bounce {
+  from{bottom:30px;}
+  to{bottom:10px;}
+}
+
+.maintext2{padding-top: 135px;}
+.maintext2 li{
+  /* display: inline-block; */
+  /* position: absolute; */
+  left: 50%;
+  /* top: 50%; */
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  /* margin-top: -100px; */
+  padding-bottom: 10px;
+  /* animation-duration: 2s; */
+  animation-delay: 1s;
+  letter-spacing: 2px;
+  /* font-family: 'Nanum Myeongjo', serif; */
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+/* mobile ====================================================================*/
+@media (max-width: 767px) {
+  /* main */
+  .star{height: 795px;}
+  /* .parallax-bg{height: 500px;} */
+  .star .parallax-bg.main_parallax_bg{height: 739px;}
+  .maintext1{width: 50%;top: 50px;}
+  .maintext2{padding-top: 150px;}
+
+  /* intro */
+    .intro{height: auto;padding-top: 129px}
+    .intro button{
+    }
+
+}
