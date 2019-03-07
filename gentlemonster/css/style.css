@@ -92,13 +92,13 @@ padding: 0 10px 0 50px; box-sizing: border-box; font-size: 18px; color:#777;}
   text-align: center; color:#333;}
 .popup_login .popup_body > a:nth-of-type(1){float: left;}
 .popup_login .popup_body > a:nth-of-type(2){float: right;}
-.popup_login .popup_body .sns-login{clear: both; border-top:1px solid #777;}
+/* .popup_login .popup_body .sns-login{clear: both; border-top:1px solid #777;}
 .popup_login .popup_body .sns-login p{text-align: center; padding: 15px 0; font-size: 14px;}
 .popup_login .popup_body .sns-login ul{overflow: hidden;}
 .popup_login .popup_body .sns-login ul li{float: left; width: 33.33%;}
 .popup_login .popup_body .sns-login ul li:nth-child(2){text-align: center;}
 .popup_login .popup_body .sns-login ul li:nth-child(3){text-align: right;}
-.popup_login .popup_body .sns-login a{width: 70px; height: 70px; vertical-align: top;}
+.popup_login .popup_body .sns-login a{width: 70px; height: 70px; vertical-align: top;} */
 
 /* 검색 */
 #btn_search_open{position: absolute;left: 300px;top: 125px;border: none;
