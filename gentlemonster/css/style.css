@@ -63,8 +63,9 @@ header nav .gnb_nav > li.active > a span.ko, header nav .gnb_nav > li:hover > a 
 header.on nav{box-shadow: 0 0 10px 5px rgba(0,0,0,0.2); top:0;}
 
 /* 로그인 */
-header #btn_login{left: 340px;top: 125px;transform: translate(50%,0);cursor: pointer;outline: none;
-    background: none;border: none;font-size: 12px;position: absolute;vertical-align: middle;}
+header #btn_login{left: 25%;top: 125px;cursor: pointer;outline: none;
+  border: none;font-size: 12px;position: absolute;vertical-align: middle;
+  background: none;margin-left: 10px;}
 
 /* popup-login */
 .popup{
@@ -73,23 +74,30 @@ header #btn_login{left: 340px;top: 125px;transform: translate(50%,0);cursor: poi
   background: #fff; box-shadow: 0 0 10px 5px rgba(0,0,0,0.2); z-index: 1001;
 }
 .popup_login{width: 100%;height: 100%;color: #333;}
-.popup_login .cancel{background: none;border: none;}
-.popup_login .popup_body{padding: 30px; margin: 0;}
+.popup_login .cancel{background: none;border: none;font-size: 30px;right: 0;
+    position: absolute;top: 0;margin: 30px;}
+.popup_login .popup_body{position: relative;padding: 30px; margin: 0;top: 50%;width: 350px;
+    left: 50%;transform: translate(-50%,-70%);}
 .popup_login .popup_body h1{display: none;}
 .popup_login .popup_body form{overflow: hidden;}
 .popup_login .popup_body form label{position: absolute; display: inline-block; width: 50px; height: 50px;
-line-height: 50px; font-size: 24px;}
+line-height: 50px; font-size: 24px;padding-left: 15px;padding-left: 15px;}
 .popup_login .popup_body form label.change{color:#fff;}
-.popup_login .popup_body form input{width: 100%; height: 50px; border: 1px solid #777;
-padding: 0 10px 0 50px; box-sizing: border-box; font-size: 18px; color:#777;}
+.popup_login .popup_body form input{width: 100%; height: 50px;border: 1px solid #000;
+    color: #000;padding: 0 10px 0 50px; box-sizing: border-box; font-size: 18px;}
 .popup_login .popup_body form input:focus{background: #333; color:#fff;}
 .popup_login .popup_body form input:focus::-webkit-input-placeholder{color:#fff;}
-.popup_login .popup_body form .message{color:#d84134; font-size: 14px; height: 30px; line-height: 30px;}
-.popup_login .popup_body form button{width: 150px; height: 50px; font-size: 18px; color:#fff; font-weight: bold;}
-.popup_login .popup_body form #btn-login{float: left; background: #d84134;}
-.popup_login .popup_body form #btn-sign{float: right; background: #ff863b;}
+.popup_login .popup_body form .message{color:#a9a7a7; font-size: 14px; height: 30px; line-height: 30px;}
+.popup_login .popup_body form button{position: absolute;right: 0px;width: 150px; height: 50px; font-size: 18px;}
+.popup_ligin .popup_body form button:nth-child(1){left: 0;transform: translate(0%,50%);top: 135px;background: gray;}
+.popup_login .popup_body form #btn_login{float: left; background: #d84134;float: left;background: #000000;
+    left: 0;position: absolute;top: 190px;margin-left: 30px;color:#fff;transition: all 1s ease-in-out;}
+.popup_login .popup_body form #btn_login:hover{background: #fff;color: #000;border: 1px solid #000;}
+.popup_login .popup_body form #btn_sign{float: right;margin-right: 30px;background: none;
+    border: 1px solid #000;color: #000;cursor: pointer;transition: all 1s ease-in-out;}
+.popup_login .popup_body form #btn_sign:hover{background: #000;color: #fff;}
 .popup_login .popup_body > a{line-height: 18px; padding: 20px 0; width: 150px;
-  text-align: center; color:#333;}
+  text-align: center; color:#333;padding: 80px 0;}
 .popup_login .popup_body > a:nth-of-type(1){float: left;}
 .popup_login .popup_body > a:nth-of-type(2){float: right;}
 /* .popup_login .popup_body .sns-login{clear: both; border-top:1px solid #777;}
@@ -101,7 +109,7 @@ padding: 0 10px 0 50px; box-sizing: border-box; font-size: 18px; color:#777;}
 .popup_login .popup_body .sns-login a{width: 70px; height: 70px; vertical-align: top;} */
 
 /* 검색 */
-#btn_search_open{position: absolute;left: 300px;top: 125px;border: none;
+#btn_search_open{position: absolute;left: 22%;top: 125px;border: none;
   background: none;font-size: 12px;cursor: pointer;outline: none;}
 #btn_search{background: none;border: none;outline: none;}
 header form.search_form{position: absolute;left: 200px;top: 150px;display: none;}
