@@ -40,7 +40,7 @@
       color: #5d5b5b;
       padding: 0;
       /* 백그라운드 고정 */
-      background-image: url(images/featuredwork5.jpg);
+      background-image: url(images/gentlemonster.jpg);
       background-color: #fff;
       background-repeat: no-repeat;
       background-size: cover;
@@ -57,22 +57,15 @@
       box-sizing: border-box;
     }
 
-    .top_box .main_title1{
-      font-size: 13px;
-      position: absolute;
-      left: 152px;
-      color: #9e9e9e;
-      font-size: 14px;
-      font-weight: 300;
-      text-transform: uppercase
-    }
-    .top_box .main_title2{font-size: 100px;font-weight: 500px;
+    .top_box .main_title1{font-size: 13px;position: absolute;
+      left: 152px;color: #fff;font-size: 14px;font-weight: 300;text-transform: uppercase}
+    .top_box .main_title2{font-size: 100px;font-weight: 500px;color: #fff;
       transition: font-size .5s;}
-
+    .info_title{margin-left: 5px;}
     .top_box .info_title .info_role{font-size: 18px;margin-right: 5em;
-      color: #9e9e9e;letter-spacing: 0.05rem;}
+      color: #fff;letter-spacing: 0.05rem;}
     .top_box .info_title .info_role .info_role_text{font-size: 18px;font-weight: 300px;
-      color: #9e9e9e;margin-left: 0.5em;}
+      color: #fff;margin-left: 0.5em;}
 
 
 
@@ -245,17 +238,19 @@
     /* 모바일================================================================== */
     @media (max-width:767px) {
 
-      .top_box{height: 780px;background-size: auto;}
+      .top_box{height: 780px;background-size: cover;}
       .top_box .container{padding: 6em 3.5em 0 3.5em;}
-      .top_box .main_title1{left: 58px;}
-      .top_box .main_title2{font-size: 40px;margin-top: 10px;}
-      .top_box .info_title .info_role{margin-right: 0;}
+      .top_box .main_title1{left: 58px;color: #fff;}
+      .top_box .main_title2{font-size: 24px;margin-top: 10px;}
+      .info_title{margin-left: 0;}
+      .top_box .info_title .info_role{margin-right: 0;color: #fff;}
+      .top_box .info_title .info_role .info_role_text{color: #fff;}
       .title2, .title3{font-size: 24px;}
-      .details{height: 800px; margin-top: 100px;}
+      .details{height: 920px; margin-top: 100px;}
       .details .container{height: auto;}
-      .details .details_info{margin-top: 100px;}
+      .details .details_info{margin-top: 150px;}
       .article_detail .detail_main .shots{padding: 2em 1.8em;}
-      .article_detail .detail_main .shots .shots_item{margin: 21% auto 0;}
+      .article_detail .detail_main .shots .shots_item{margin: 21% auto 0;margin-top: 127px;}
       .article_detail .detail_main .slider{padding: 2em 4em;}
 
       .slider_inner{padding: 0;}
@@ -311,7 +306,7 @@
         <div class="container">
           <!-- img -->
           <div class="col-md-6 col-sm-6 col-xs-12 details_img">
-            <img src="images/F&B.png" alt="포트폴리오 각 미디어 별 이미지">
+            <img src="images/gentlemonster_main.png" alt="포트폴리오 각 미디어 별 이미지">
           </div>
           <!-- info -->
           <div class="col-md-6 col-sm-6 col-xs-12 details_info">
@@ -331,12 +326,12 @@
             </dl>
             <dl class="col-md-6 col-sm-6 col-xs-12">
               <dt>DURATION</dt>
-              <dd>2017.1</dd>
+              <dd>2019.3</dd>
             </dl>
             <!-- 사이트 링크 버튼,깃헙 링크 버튼 -->
             <div class="col-md-12 col-sm-12 col-xs-12 details_btn">
-              <a href="https://jar3543.github.io/github/F&B/F&B-000000.html" class="underlined">Demo<i class="fas fa-arrow-right"></i></a>
-              <a href="https://github.com/jar3543/github/tree/master/F%26B" class="underlined">github<i class="fas fa-arrow-right"></i></a>
+              <a href="https://jar3543.github.io/github/gentlemonster/index.html" class="underlined">Demo<i class="fas fa-arrow-right"></i></a>
+              <a href="https://github.com/jar3543/github/tree/master/gentlemonster" class="underlined">github<i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -350,51 +345,25 @@
               <ul class="shots">
                 <li class="shots_item unveiled">
                   <a href="#" class="item_link">
-                    <img class="shots_item_img lazyload" src="images/work_f&b_intro_img.png" alt="f&b 메인 이미지">
+                    <img class="shots_item_img lazyload" src="images/work_gentlmonster_main.png" alt="젠틀몬스터 메인 이미지">
                   </a>
                 </li>
                 <li class="shots_item unveiled">
                   <a href="#" class="item_link">
-                    <img class="shots_item_img lazyload" src="images/work_f&b_index_img.png" alt="f&b 인트로 이미지">
+                    <img class="shots_item_img lazyload" src="images/work_gentlemonster_item.png" alt="젠틀몬스터 메뉴 이미지">
+                  </a>
+                </li>
+                <li class="shots_item unveiled">
+                  <a href="#" class="item_link">
+                    <img class="shots_item_img lazyload" src="images/work_gentlemonster_menu.png" alt="젠틀몬스터 메뉴 이미지">
+                  </a>
+                </li>
+                <li class="shots_item unveiled">
+                  <a href="#" class="item_link">
+                    <img class="shots_item_img lazyload" src="images/work_gentlemonster_search.png" alt="젠틀몬스터 메뉴 이미지">
                   </a>
                 </li>
               </ul>
-              <div class="slider">
-                <div class="slider_inner">
-                  <div class="swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
-                  <div class="swiper-button-next"><i class="fas fa-arrow-right"></i></div>
-                  <div class="swiper-container">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <div class="swiper-zoom-container">
-                            <img src="images/f&b_m_00.png" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="swiper-zoom-container">
-                            <img src="images/f&b_m_01.png" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="swiper-zoom-container">
-                            <img src="images/f&b_m_02.png" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="swiper-zoom-container">
-                            <img src="images/f&b_m_03.png" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="swiper-zoom-container">
-                            <img src="images/f&b_m_04.png" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -409,8 +378,8 @@
     <!-- footerbar==========================================================-->
     <div class="wow fadeInUp animated footerbar">
       <a href="https://jar3543.github.io/github/portfolio/work_motte.html" class="footer_btn"><span>prev</span></a>
-      <a href="https://github.com/jar3543/github/tree/master/F%26B" class="footer_btn"><span>view code</span></a>
-      <a href="https://jar3543.github.io/github/portfolio/work_sidmool.html" class="footer_btn"><span>next</span></a>
+      <a href="https://github.com/jar3543/github/tree/master/gentlemonster" class="footer_btn"><span>view code</span></a>
+      <a href="https://jar3543.github.io/github/portfolio/work_f&b.html" class="footer_btn"><span>next</span></a>
     </div>
     <!-- footer============================================================ -->
     <footer>
