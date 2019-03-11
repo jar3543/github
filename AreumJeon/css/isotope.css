@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* #portfolio .nav{margin-bottom:20px;}
+#portfolio .nav{margin-bottom:20px;}
 #portfolio .list-unstyled{margin-bottom:0;}
 #portfolio .list-unstyled li:last-child .progress{margin-bottom:0;}
 #portfolio .list-unstyled .label{position: absolute; line-height: 15px; width:50px;}
@@ -10,10 +10,10 @@
 #portfolio .panel-body{padding: 0; overflow: hidden; position: relative;}
 #portfolio .panel-body img{ transition: 1s;}
 #portfolio .panel-body:hover img{transform: scale(1.2);}
-#portfolio .panel-heading .label{padding: 3px 5px;} */
+#portfolio .panel-heading .label{padding: 3px 5px;}
 
 /* 마우스 오버 시 나타나는 자세히보기 버튼 */
-/* #portfolio .panel-body .icon_wrap{
+#portfolio .panel-body .icon_wrap{
   position: absolute;
   top:0; left:0;
   width: 100%; height: 100%;
@@ -30,7 +30,7 @@
   color:#fff; font-size: 3em;
 }
 #portfolio .panel-body .icon_wrap .glyphicon-search:focus,
-#portfolio .panel-body .icon_wrap .glyphicon-search:hover{text-decoration: none;} */
+#portfolio .panel-body .icon_wrap .glyphicon-search:hover{text-decoration: none;}
 
 
 /* 포트폴리오 카테고리 */
@@ -43,7 +43,7 @@
 .nav-justified>li>a{font-size: 14px;color: #000;}
 .nav>li>a:focus, .nav>li>a:hover{background: none !important;}
 
-/* .nav-pills>li>a{
+.nav-pills>li>a{
   border-radius: 0 !important;
   flex: 1 1 auto;
   margin: 10px;
@@ -65,7 +65,7 @@
   background: #f3f377;
   opacity: .3;
 }
-.nav-pills>li>a:hover::after{width: 100%;left: 0;} */
+.nav-pills>li>a:hover::after{width: 100%;left: 0;}
 
 
 .panel-default{border-color: none;}
