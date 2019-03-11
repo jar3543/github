@@ -654,9 +654,11 @@ section .box:nth-child(6){margin-top: -100px;height: 550px;}
 
 /* contact    */
 .contact_info{padding-top: 15px;margin-bottom: 120px;}
-.contact_info p{font-size: 14px;}
-.contact_info ul li{font-size: 18px;}
-.contact_info ul li:nth-child(2){margin-left: 15px;}
+.contact_info p{font-size: 13px;}
+.contact_info p:nth-child(1){letter-spacing: 0px;}
+.contact_info ul{width: 100%;}
+.contact_info ul li{font-size: 18px;width: 100%;}
+.contact_info ul li:nth-child(2){margin-left: 0px;}
 .contact_info ul li:nth-child(1){margin-right: 0;}
 
 .contact_form a{width: 300px;}
