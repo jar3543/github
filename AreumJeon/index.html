@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/isotope.css">
+    <link rel="stylesheet" href="css/easypiechart.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/easypiechart.css">
   </head>
   <body>
 
@@ -174,101 +174,20 @@
 
         <!-- portfolio ======================================================-->
         <article id="work" class="box">
-          <!-- isotope -->
-          <div class="container">
-            <h2 class="wow fadeInUp animated"><a href="#">FEATURED WORK</a></h2>
-            <div id="portfolio" class="wow fadeInUp animated">
-              <ul class="nav nav-pills nav-justified">
-                <li class="active" data-sort-value=""><a href="#">All</a></li>
-                <li data-sort-value="[data-category=Responsive]"><a href="#">Responsive</a></li>
-                <li data-sort-value="[data-category=PC]"><a href="#">PC</a></li>
-                <li data-sort-value="[data-category=Mobile]"><a href="#">Mobile</a></li>
-              </ul>
-
-              <!-- works -->
-              <div class="row grid">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-category="Responsive">
-                  <div class="panel panel-default portfolio_item">
-                    <div class="panel-body item_wrap">
-                      <img src="images/F&B.png" alt="포트폴리오 작업물. f&b 이미지" class="img-responsive">
-                      <a class="overlay_background" href="https://jar3543.github.io/github/portfolio/work_f&b.html"></a>
-                      <div class="item_meta">
-                        <h3 class="item_title ">
-                          <a href="#"><strong>F&b</strong><br>쇼핑몰사이트</a>
-                        </h3>
-                        <h5 class="item_category">pc</h5>
-                        <h5 class="item_category">메인페이지/상세페이지</h5>
-                        <h5 class="item_category">publishing</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-category="PC">
-                  <div class="panel panel-default portfolio_item">
-                    <div class="panel-body item_wrap">
-                      <img src="images/sidmool_main.png" alt="포트폴리오 작업물. 시드물 이미지" class="img-responsive">
-                      <a class="overlay_background" href="https://jar3543.github.io/github/portfolio/work_sidmool.html"></a>
-                      <div class="item_meta">
-                        <h3 class="item_title ">
-                          <a href="#"><strong>SIDMOOL</strong><br>천연화장품쇼핑몰<br>리뉴얼사이트</a>
-                        </h3>
-                        <h5 class="item_category">pc</h5>
-                        <h5 class="item_category">design/publishing</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-category="PC">
-                  <div class="panel panel-default portfolio_item">
-                    <div class="panel-body item_wrap">
-                      <img src="images/dodream.png" alt="포트폴리오 작업물. dodream 이미지" class="img-responsive">
-                      <a class="overlay_background" href="https://jar3543.github.io/github/portfolio/work_dodream.html"></a>
-                      <div class="item_meta">
-                        <h3 class="item_title ">
-                          <a href="#"><strong>DODREAM</strong></a>
-                        </h3>
-                        <h5 class="item_category">pc</h5>
-                        <h5 class="item_category">상세페이지</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-category="PC">
-                  <div class="panel panel-default portfolio_item">
-                    <div class="panel-body item_wrap">
-                      <img src="images/motte.png" alt="포트폴리오 작업물. motte 이미지" class="img-responsive">
-                      <a class="overlay_background" href="https://jar3543.github.io/github/portfolio/work_motte.html"></a>
-                      <div class="item_meta">
-                        <h3 class="item_title ">
-                          <a href="#">싱어송라이터<br><strong>motte</strong><br>소개페이지</a>
-                        </h3>
-                        <h5 class="item_category">pc</h5>
-                        <h5 class="item_category">메인페이지</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-category="PC">
-                  <div class="panel panel-default portfolio_item">
-                    <div class="panel-body item_wrap">
-                      <img src="images/gentlemonster_main.png" alt="포트폴리오 작업물. 젠틀몬스터 이미지" class="img-responsive">
-                      <a class="overlay_background" href="https://jar3543.github.io/github/portfolio/work_gm.html"></a>
-                      <div class="item_meta">
-                        <h3 class="item_title ">
-                          <a href="#"><strong>GENTLEMONSTER</strong>리뉴얼사이트</a>
-                        </h3>
-                        <h5 class="item_category">pc</h5>
-                        <h5 class="item_category">서브페이지</h5>
-                        <h5 class="item_category">design/publishing</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!-- Swiper -->
+          <div class="swiper-container container">
+            <h2 class="wow fadeInUp animated"><a href="#">MY WORK</a></h2>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide work_one" style="cursor:pointer" onclick="window.location.href='https://jar3543.github.io/github/portfolio/work_f&b.html';"></div>
+              <div class="swiper-slide work_two" style="cursor:pointer" onclick="window.location.href='https://jar3543.github.io/github/portfolio/work_sidmool.html';"></div>
+              <div class="swiper-slide work_three" style="cursor:pointer" onclick="window.location.href='https://jar3543.github.io/github/portfolio/work_dodream.html';"></div>
+              <div class="swiper-slide work_four" style="cursor:pointer" onclick="window.location.href='https://jar3543.github.io/github/portfolio/work_motte.html';"></div>
+              <div class="swiper-slide work_five" style="cursor:pointer" onclick="window.location.href='https://jar3543.github.io/github/portfolio/work_gm.html';"></div>
             </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+            <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
           </div>
-          <!-- isotope end -->
-
         </article>
         <article id="contact" class="box">
           <div class="container">
