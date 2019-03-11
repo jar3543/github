@@ -624,7 +624,7 @@ section .box:nth-child(6){margin-top: -100px;height: 550px;}
 /* slide */
   body > section{margin-top: -56px;}
    #slide .main_slide{height: 500px;}
-   .swiper-wrapper{height: 500px;}
+   .swiper-wrapper{height: 200px;}
    .slide_logo{margin-left: 10px;}
    .main_slide .slide_two .slide_logo img:nth-child(1),
    .main_slide .slide_two .slide_logo img:nth-child(2),
@@ -649,6 +649,10 @@ section .box:nth-child(6){margin-top: -100px;height: 550px;}
 /* workprocess */
    section .box:nth-child(4){height: auto;}
    #workprocess .container div.row{margin-bottom: 50px;}
+
+/* work */
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{top: 70%!important;}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{top: 70%!important;}
 
 /* contact    */
 .contact_info{padding-top: 15px;margin-bottom: 120px;}
