@@ -150,6 +150,7 @@ $('.about_button button').on('click',function(){
   alert('준비중입니다.');
   console.log('준비중입니다.');
 })
+// sns 메세지 띄우기
 $('.sns li a img').on('click',function(){
   alert('준비중입니다.');
   console.log('준비중입니다.');
