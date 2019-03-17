@@ -452,12 +452,13 @@ line-height: 50px; font-size: 24px;}
 
   /* 영문,한글 */
   header nav .gnb-nav > li > a span{background: none; padding-left: 10px;}
-  header nav .gnb-nav > li > a span.ko{text-align: left; color:#fff; background:#efefef;}
+  header nav .gnb-nav > li > a span.ko{text-align: left; color:#000; background:#efefef;}
 
   /* 2depth */
   header nav .gnb-nav li ul{position: static; text-align: left; height: auto; padding: 0 0 0 25px;
   line-height: 40px; box-sizing: border-box;background: #efefef;}
-  header nav .gnb-nav li ul li a{font-size: 14px; line-height: 40px; display: block;}
+  header nav .gnb-nav li ul li a{font-size: 14px; line-height: 40px; display: block;
+    color: #000;}
   header nav .gnb-nav li ul li a.active,
   header nav .gnb-nav li ul li a:hover{text-decoration: none;}
   header nav .gnb-nav li ul li a::before{content: '-'; padding-right: 5px;}
