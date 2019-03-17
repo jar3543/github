@@ -76,11 +76,11 @@ $(function(){
     $('.gnb-nav > li').on('click',function(){
       //각 메뉴를 독립적으로 움직이고 싶을 때
       //모두다 펼치기 되면 네비게이션의 높이를 벗어나므로 네비게이션에 overflow-y:auto; =>높이 or 영역
-      // $(this).find('ul').slideToggle(500);
+      $(this).find('ul').slideToggle(500);
 
       //아코디언 방식(메뉴를 한세트로 묶어서 선택한 것만 활성화시키기)
-      $('.gnb-nav ul').slideUp(500);
-      $(this).find('ul').slideDown(500);
+      // $('.gnb-nav ul').slideUp(500);
+      // $(this).find('ul').slideDown(500);
     })
   }
 
