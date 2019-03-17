@@ -7,20 +7,31 @@ $(function(){
     slideFlag=true;
     slideIndex=0;
     slideWidth=$devWidth;
-    slideLength=$('.main_slide .slide > ul > li').length;
-    $('.main_slide .slide > ul').width(slideWidth*slideLength);
-    $('.main_slide .slide > ul > li').width(slideWidth);
+    slideLength=$('.main-slide .slide > ul > li').length;
+    //console.log('슬라이드넓이',slideWidth,'슬라이드수',slideLength);
+    //슬라이드의 총 넓이
+    $('.main-slide .slide > ul').width(slideWidth*slideLength);
+    //슬라이드 이미지의 가로폭
+    $('.main-slide .slide > ul > li').width(slideWidth);
   }).resize();
 
-  // 슬라이드 이미지(pc)
-  var mainSlideBG=['images/main-slide.png',
-                    'images/main-slide1.png'];
+  //슬라이드 이미지
+  var mainSlideBG=['images/main-slide1.png',
+                    'images/main-slide2.png',
+                    'images/main-slide1-m.png',
+                    'images/main-slide2-m.png'];
+  $(window).resize(function(){
+    $('.main-slide .slide > ul > li').each(function(index){
+      //console.log(index);
+      if($devWidth < $limitSize){//모바일
+        $(this).css('backgroundImage','url('+mainSlideBG[index+2]+')');
+      }else{//pc
+        $(this).css('backgroundImage','url('+mainSlideBG[index]+')');
+      }
+    })
+  });
 
-    $('.main_slide .slide > ul > li').each(function(index){
-      $(this).css('backgroundImage','url('+mainSlideBG[index]+')');
-    });
-
-  // pagination 설정
+  //pagination 설정(슬라이드의 수만큼 페이징 붙여주기)
   for(var i=0; i<slideLength; i++){
     $('.pagination ul').append('<li><a href="#"><span class="skip">'+(i+1)+'</span></a></li>');
     if(i==0){
@@ -29,7 +40,7 @@ $(function(){
     }
   }
 
-  //이전/다음 버튼 방향 초기화(다음을 기본으로 설정)
+  //이전/다음버튼 방향 초기화(다음을 기본으로 설정)
   var arrow=$('.slide .icon-right-open');
 
   //자동재생(5초마다 실행)
@@ -38,9 +49,9 @@ $(function(){
   //슬라이드 함수작성
   function slide(){
     if(slideFlag){
-      //다음에 slide함수를 호출 시 조건을 타지않도록 막아줌.(중복클릭을 막아줌)
+      //다음에 slide함수를 호출시 조건을 타지않도록 막아줌.(중복클릭을 막아주는 역할)
       slideFlag=false;
-      //페이지 활성화 초기화시키기(페이지가 중복되게 활성화되는 것을 방지함)
+      //페이지 활성화 초기화시키기
       $('.pagination li').removeClass('active');
       if(arrow.hasClass('icon-left-open')) slideIndex--;//이전이면 1감소
       else slideIndex++;//다음이면 1증가
@@ -50,7 +61,7 @@ $(function(){
       $('.slide > ul').animate({
         'left':-(slideIndex*slideWidth)
       },1000,function(){
-        //슬라이드가 이동되고 난 다음에 다시 이동될 수 있도록 활성화
+        //슬라이드가 이동되고 난다음에 다시 이동될 수 있도록 활성화
         slideFlag=true;
       })
 
@@ -69,20 +80,19 @@ $(function(){
   //정지/재생버튼
   var controlBtn=true;
   $('.pagination button').on('click',function(){
-    // console.log('정지');
     if(controlBtn){//정지
-    stop();
-  }else{//재생
-    //다시 5초마다 돌아가도록 수행
-    play=setInterval(slide,5000);
-    $('.slide .pagination button').removeClass('icon-play').addClass('icon-pause');
-    controlBtn=true;
+      stop();
+    }else{//재생
+      //다시 5초마다 돌아가도록 수행
+      play=setInterval(slide,5000);
+      $('.slide .pagination button').removeClass('icon-play').addClass('icon-pause');
+      controlBtn=true;
     }
   })
 
   //이전/다음버튼
   $('.slide > button').on('click',function(){
-    arrow=$(this)//이전/다음버튼
+    arrow=$(this);//방향설정
     stop();//자동재생 정지
     slide();//슬라이드이동처리
   })
@@ -90,20 +100,16 @@ $(function(){
   //페이지버튼(동적으로 만들어진 요소의 경우 아래의 패턴을 사용함.)
   $('.pagination').on('click','a',function(e){
     e.preventDefault();
-    stop();//자동재생정지
+    stop();//자동재생 정지
     $('.pagination li').removeClass('active');
     var pageIndex=$('.pagination a').index(this);//클릭한 대상의 인덱스값 구하기
     $('.pagination li').eq(pageIndex).addClass('active');
     $('.slide > ul').animate({
       'left':-(pageIndex*slideWidth)
     },1000);
-    //*중요:클릭한 인덱스값으로 슬라이드 인덱스값을 동일하게 변경처리
-    slideIndex=pageIndex
+    //*중요:클릭한 인덱스의 값으로 슬라이드 인덱스값을 동일하게 변경처리
+    slideIndex=pageIndex;
   })
-
-  // $('.slide > button').on('click',function(){
-  //   console.log('클릭');
-  // })
 
 
 
