@@ -317,7 +317,7 @@ footer .sns li button{color:#fff; font-size: 30px; transition: color 0.5s;}
 footer .sns li button.icon-facebook:hover{color:#3b5a9a;}
 footer .sns li button.icon-twitter:hover{color:#2aade3;}
 footer .sns li button.icon-youtube-play:hover{color:#cb2129;}
-footer p{padding: 195px 0 20px;}
+footer p{padding: 195px 0 20px;color: #777;}
 
 /* popup */
 .popup-bg{
