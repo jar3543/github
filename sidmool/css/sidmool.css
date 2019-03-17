@@ -415,7 +415,8 @@ line-height: 50px; font-size: 24px;}
   #btn-search-open{display: none;}
   header form.search-form{position: relative; bottom:initial; display: block;
     padding: 0 10px 10px;top: 20px;}
-  header form.search-form input{width: 100%; border:0;border-bottom: 1px solid #333;}
+  header form.search-form input{width: 100%; border:0;border-bottom: 1px solid #333;
+    border-radius: 0;}
   header form.search-form .icon-search{right: 20px;}
 
   /* 네비게이션 */
@@ -451,7 +452,7 @@ line-height: 50px; font-size: 24px;}
 
   /* 영문,한글 */
   header nav .gnb-nav > li > a span{background: none; padding-left: 10px;color: #000;}
-  header nav .gnb-nav > li > a span.ko{text-align: left; color:#000; background:#efefef;}
+  header nav .gnb-nav > li > a span.ko{text-align: left;background:#efefef;}
 
   /* 2depth */
   header nav .gnb-nav li ul{position: static; text-align: left; height: auto; padding: 0 0 0 25px;
