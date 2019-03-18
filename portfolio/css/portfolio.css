@@ -659,6 +659,7 @@ section .box:nth-child(6){margin-top: -100px;height: 550px;}
    #workprocess .container div.row{margin-bottom: 50px;}
 
 /* work */
+#work .swiper-slide a{top: 30px;left: 50px;}
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{top: 70%!important;}
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{top: 70%!important;}
 
