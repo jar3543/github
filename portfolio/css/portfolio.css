@@ -398,6 +398,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 #workprocess h4{color: #000;font-size: 18px;margin: 10px 0;}
 
 /* work =======================================================================*/
+/* 작업물 백그라운드로 넣기 */
 #work .work_one{background-image: url(../images/F&B.png) !important;
   background-size: contain;background-repeat: no-repeat;background-position: center;}
 #work .work_two{background-image: url(../images/sidmool_main.png) !important;
@@ -408,6 +409,11 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   background-size: contain;background-repeat: no-repeat;background-position: center;}
 #work .work_five{background-image: url(../images/gentlemonster_main.png) !important;
   background-size: contain;background-repeat: no-repeat;background-position: center;}
+
+/* 작업물에 링크 연결하기 */
+#work .swiper-slide{position: relative;}
+#work .swiper-slide a{position: absolute;display: block;width: 70%;height: 80%;
+  top: 50px;left: 200px;}
 
 .overlay_background{height: 100%;width: 100%;position: absolute;top: 0;left: 0;
   background-color: rgba(0, 0, 0, 0.38);opacity: 0;transition: opacity 300ms;}
