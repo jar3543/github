@@ -434,7 +434,7 @@ line-height: 50px; font-size: 24px;}
 
   /* 1depth */
   header nav .gnb-nav{
-    position: absolute; left: 0; top: 100px;bottom: 0; transform: none; width: 100%;
+    position: absolute; left: 0; top: 140px;bottom: 0; transform: none; width: 100%;
     overflow-x: hidden; overflow-y: auto;
   }
   header nav .gnb-nav > li{float: none; border-bottom:1px solid #777;}
@@ -448,6 +448,9 @@ line-height: 50px; font-size: 24px;}
   }
   header nav .gnb-nav > li.active > a::after, header nav .gnb-nav > li:hover > a::after{
     content: '\e80f';
+  }
+  header nav .gnb-nav > li.active > a span:nth-child(1), header nav .gnb-nav > li:hover > a span:nth-child(1){
+    transform: rotateX(0deg);
   }
 
   /* 영문,한글 */
