@@ -452,7 +452,7 @@ line-height: 50px; font-size: 24px;}
 
   /* 영문,한글 */
   header nav .gnb-nav > li > a span{background: none; padding-left: 10px;}
-  header nav .gnb-nav > li > a span.ko{text-align: left; color:#fff; background:#a50000;}
+  header nav .gnb-nav > li > a span.ko{display: none;text-align: left; color:#fff; background:#a50000;}
 
   /* 2depth */
   header nav .gnb-nav li ul{position: static; text-align: left; height: auto; padding: 0 0 0 25px;
