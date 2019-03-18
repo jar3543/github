@@ -409,6 +409,8 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   background-size: contain;background-repeat: no-repeat;background-position: center;}
 #work .work_five{background-image: url(../images/gentlemonster_main.png) !important;
   background-size: contain;background-repeat: no-repeat;background-position: center;}
+#work .work_six{background-image: url(../images/megabox.png) !important;
+  background-size: contain;background-repeat: no-repeat;background-position: center;}
 
 /* 작업물에 링크 연결하기 */
 #work .swiper-slide{position: relative;}
