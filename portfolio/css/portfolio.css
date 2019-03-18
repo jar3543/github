@@ -273,7 +273,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 
 /* about =====================================================================*/
 #about .container > p{font-size: 14px;color: #aaa5a5;margin-top: -50px;}
-.about_img img{width: 250px;}
+.about_img img{width: 300px;}
 .about_img{position: relative;height: 100%;}
 .aboutext_wrap{position: absolute !important;
   right: 0;top: 50%;}
