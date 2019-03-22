@@ -145,8 +145,11 @@ $(function(){
 
 
 
-// about_button 메세지 띄우기
+//메세지 띄우기
 $('.about_button button').on('click',function(){
   alert('준비중입니다.');
-  console.log('준비중입니다.');
+})
+
+$('.sns li:nth-child(1)').on('click',function(){
+  alert('준비중입니다.');
 })
