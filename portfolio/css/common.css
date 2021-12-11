@@ -1,27 +1,29 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Quicksand|Roboto');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Quicksand|Roboto'); */
 
 *{ 
   margin: 0; 
   padding: 0;
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
-h4, h5, span, a, p, li{
+/* h4, h5, span, a, p, li{
   font-family: 'Nanum Gothic Coding', monospace !important;
+} */
+a{
+  text-decoration: none !important;
 }
-h2{
+/* h2{
   font-family: 'Lato', 'LotteMartDream',  AppleGothic, sans-serif, Helvetica !important;
-}
+} */
 .skip{
-  font-size: 0;text-indent: -99999px;position: absolute;left: -99999px;
+  font-size: 0;
+  text-indent: -99999px;
+  position: absolute;
+  left: -99999px;
 }
 li{
   list-style: none;
 }
-a{
-  text-decoration: none !important;
-}
-

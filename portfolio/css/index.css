@@ -22,30 +22,31 @@ header.fixed{
   z-index: 999999;
   opacity: 1 !important;
 
+  padding: 0 8%;
   background-color: #fff;
   box-shadow: 0 0 5px 0 gray;
 }
-header .container{
+.header-container{
   position: relative;
-  max-width: 1200px;
   margin: auto;
+
+  max-width: 1440px;
+  width: 100%;
 }
 
 /* 로고 */
 header .logo a{
-  float: left;
+  /* float: left; */
   
   color: #000;
   font-size: 25px;
-  text-decoration: none;
+  /* text-decoration: none; */
     
-  letter-spacing: 0px;
+  line-height: 63px;
   transition: all 280ms ease-in-out;
 }
 header .logo a:hover{
   letter-spacing: 2px;
-}
-header .logo{
 }
 
 
@@ -60,6 +61,8 @@ header .nav{
 }
 header .nav ul li{
   text-align: center;
+  float: left;
+  padding-left: 20px;
 }
 header .nav ul li a{
   display: block;
@@ -116,33 +119,38 @@ header .nav ul li a:hover{
 }
 
 
-/* 컨테이너 ===============================================================*/
+section{
+  background: rgba(208, 215, 223, 0.19);
+}
+
+
 .container{
   max-width: 1200px;
   margin: auto;
-  position: relative;
-  margin-bottom: 100px;
   height: 100%;
-
   width: 100%;
-  padding: 0 20px;
 }
-#slide > h2, .container > h2{
-  font-size: 20px;
+.container .contactTxt{
+  font-size: 40px;
   color: #000;
-  margin: 50px 0;
+  padding-top: 50px;
+  letter-spacing: 3px;
+}
+/* #slide > h2 {
+  font-size: 40px;
+  color: #000;
   padding-top: 50px;
   letter-spacing: 3px;
   text-align: center;
-}
-.container > p{
+} */
+.container .smtxt{
   text-align: center;
 }
 .container > h2 a{
   position: relative;
   display: inline-block;flex: 1;
   color: #000;
-  background-image: linear-gradient(to right, #f3f377 0, #f3f377 100%);
+  background-image: linear-gradient(to right, rgba(182, 198, 217, 0.19) 0, rgba(182, 198, 217, 0.19) 100%);
   background-size: 0 100%;
   background-repeat: no-repeat;
   background-position: 0 0.1em;
@@ -157,16 +165,13 @@ header .nav ul li a:hover{
 
 
 /* 컨텐츠 ====================================================================*/
-section .box{
-  margin-top: 100px;
+section .box:nth-child(2){
+  /* margin-top: 0; */
 }
-
-/* 슬라이드 */
-section .box:nth-child(1){background: #fff; margin-top: 0;}
-/* about */
-section .box:nth-child(2){margin-top: 0;}
-/* work */
-section .box:nth-child(6){background: #fff;height: 600px;}
+section .box:nth-child(6){
+  background: #fff;
+  height: 600px;
+}
 
 
 
@@ -301,23 +306,30 @@ section .box:nth-child(6){background: #fff;height: 600px;}
 
 
 /* about =====================================================================*/
-#about .container > p{
+section .box:nth-child(1){
+  position: relative;
+
+  margin-top: 0;
+  height: 450px;
+}
+#about{
+  position: relative;
+  height: 500px;
+}
+#about .container .smtxt{
   font-size: 14px;
   color: #aaa5a5;
   margin-top: -50px;
-  text-align: center;
+  /* text-align: center; */
 }
-.about_img img{width: 300px;}
+/* .about_img img{width: 300px;}
 .about_img{position: relative;height: 100%;}
-.aboutext_wrap{
-  /* width: auto; */
-}
 .aboutext_wrap .aboutext{
   display: inline;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 .aboutext_wrap .aboutext p:nth-child(1){font-family: 'Indie Flower', cursive  !important;
   text-align: left;}
 .aboutext_wrap .aboutext p:nth-child(2){
@@ -330,7 +342,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   font-family: 'Nanum Myeongjo', serif  !important;
 }
 
-.about_button{
+/* .about_button{
   position: absolute;
   right: 0;
   width: 100%;
@@ -374,7 +386,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   margin-left: -13px;
   padding-top: 8px;
   opacity: 1;
-}
+} */
 
 
 /* 수정한 부분 start ========================================================= */
@@ -399,24 +411,21 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   margin-left: 20px;
 } */
 
+/* about-left  */
+.about-left{
+  /* position: absolute;
+  width: 90%;
+  height: 500px;
+  top: 0;
+  right: 0;
+  background: rgba(182, 198, 217, 0.19);
+  padding-top: 200px; */
 
-
-
-
-/* main =============================== */
-#main{
-  /* height: 840px; */
-  
-  border: 1px solid gray;
-}
-
-/* main-left  */
-.main-left{
-  float: left;
-  width: 50%;
+  /* float: left; */
+  /* width: 50%; */
 }
 /* 이미지 백그라운드로 넣은 것 */
-/* .main-left > div{
+/* .about-left > div{
   background-image: url(../img/prototype.jpg);
   background-size: 200%;
   background-position: 80% 0;
@@ -427,47 +436,47 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   overflow: hidden;
 } */
 
-.main-left div.images{
-/*     line-height: 700px; */
+/* .about-left div.images{
+    line-height: 700px;
 }
-.main-left div.images img{
-/*     vertical-align: middle; */
+.about-left div.images img{
+    vertical-align: middle;
   width: 33.3%;
-}
-.main-background{
-  background: rgba(240, 235, 224, 1);
-  width: 100px;
-  height: 950px;
-  
-  position: absolute;
-  top: 0;
-  
-  z-index: -1;
-}
+} */
 
-
-
-
-
-/* .main-right-box  */
-
-.main-right{
+.about-right{
   display: table;
-  height: 700px;
   
   position: relative;
 }
-.main-right div.main-pre{
-  color: red;
+.about-introduce{
+  /* display: table-cell; */
+  /* vertical-align: middle; */
+
+  /* width: 50%; */
+  padding-top: 100px;
 }
-.main-right div.main-introduce{
-  display: table-cell;
-  vertical-align: middle;
+.about-introduce ul li{
+  color: #092B54;
+  line-height: 30px;
 }
-.main-right div.main-introduce ul li:nth-child(3){
+.about-introduce ul li:nth-child(3){
   padding-top: 20px;
 }
-.main-right .border{
+.about-introduce ul li b{
+  font-size: 30px;
+  color: #1e3fdb;
+}
+.about-right-txt{
+  text-align: right;
+  padding-top: 100px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.about-right-txt ul li{
+  color: #999db3;
+}
+/* .about-right .border{
   border: 1px solid rgb(221, 170, 170);
   
   position: absolute;
@@ -477,10 +486,7 @@ section .box:nth-child(6){background: #fff;height: 600px;}
   height: 300px;
   margin-top: 200px;
   margin-right: 150px;
-}
-
-
-
+} */
 
 
 /* footer 
@@ -497,34 +503,73 @@ footer{
 
 
 /* skill===================================================================== */
-#skill .container > p{font-size: 14px;color: #aaa5a5;margin-top: -50px;}
-#skill img{margin-bottom: 30px;margin-top: 40px;}
-#skill .container h4{color: #000;font-size: 25px;margin: 10px 0;}
-#skill .container h3{font-size: 14px;}
-#skill .skill_text{font-size: 12px;font-weight: lighter;}
-#skill .skill_area{padding-top: 50px;}
-#skill .container .skill_area > div{height: 300px;}
+#skill{
+  position: relative;
+
+  margin-top: 0;
+  height: 500px;
+}
+#skill .container > p{
+  font-size: 14px;
+  color: #aaa5a5;
+}
+#skill img{
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+#skill .container h4{
+  color: #000;
+  font-size: 25px;
+  margin: 10px 0;
+}
+#skill .container h3{
+  font-size: 14px;
+  text-align: center;
+}
+#skill .skill_text{
+  font-size: 12px;
+  font-weight: lighter;
+  margin-top: 100px;
+  display: block;
+}
+#skill .skill_area{
+  padding-top: 50px;
+}
+#skill .container .skill_area > div{
+  height: 300px;
+}
 
 /* 마우스오버했을 때 */
-.hover_wrap{position: relative;height: 400px;}
+.hover_wrap{
+  /* position: relative; */
+  /* height: 400px; */
+  width: 33.3%;
+  float: left;
+  
+  padding: 10px 10px;
+}
 .hover_wrap .skill_border{
-  width: 100%;
   position: relative;
+  width: 100%;
+  height: 250px;
+
+  padding: 20px 60px;
+  border: 1px solid black;
+  background: white;
+
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
-  border: none;
-  padding-left: 60px;padding-right: 60px;
   font-size: 14px;
   outline: none;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-#skill_hover:hover .border{
+/* #skill_hover:hover .border{
   width: 100px;
   height: 100px;
   border-color: #a5a5a5;
-}
-.border2{
+} */
+/* .border2{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -533,8 +578,8 @@ footer{
   width: 30px;
   height: 30px;
   transition: all .5s ease-in-out;
-}
-.border1{
+} */
+/* .border1{
   position: absolute;
   background: none;
   top: 0;
@@ -544,13 +589,17 @@ footer{
   width: 30px;
   height: 30px;
   transition: all .5s ease-in-out;
-}
+} */
 
 /* workprocess=============================================================== */
 #workprocess img{margin-bottom: 30px;margin-top: 40px;}
 #workprocess h4{color: #000;font-size: 18px;margin: 10px 0;}
 
 /* work =======================================================================*/
+#work{
+  position: relative;
+  height: 500px;
+}
 /* 작업물 백그라운드로 넣기 */
 #work .work_one{background-image: url(../images/F&B.png) !important;
   background-size: contain;background-repeat: no-repeat;background-position: center;}
@@ -630,57 +679,108 @@ footer{
 
 
 /* contact ==================================================================*/
+#contact{
+  position: relative;
+
+  width: 100%;
+  height: 500px;
+}
 #contact .container{
+  /* text-align: center; */
+}
+.verticalTxt{
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  transform: rotate(90deg);
+  transform-origin: 100% 0%;
+}
+.verticalTxt p{
+  color: rgb(167, 202, 215);
+}
+.background{
+  width: 80%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  margin-top: 110px;
+  /* background: rgba(240, 235, 224, 1); */
+  background: rgb(233, 248, 254);
+}
+#contact .txtbk{
+  color: black;
+}
+#contact ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(50%);
+
   text-align: center;
 }
 #contact .contact_form{
   display: inline-block;
 
-  color: #FFFFFF;
+  color: black;
   border-radius: 30px;
-  width: 330px;
-  height: 50px;
+  /* width: 330px;
+  height: 50px; */
   padding: 13px;
-
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 500;
-  background-color: #231d63;
-  box-shadow: 0 14px 26px -12px rgba(70, 77, 144, 0.42),
+
+  /* box-shadow: 0 14px 26px -12px rgba(70, 77, 144, 0.42),
   0 4px 23px 0px rgba(0, 0, 0, 0.12),
-  0 8px 10px -5px rgba(8, 55, 255, 0.2);
-  transition: all 0.2s cubic-bezier(0.4, 0, 1, 1),
-    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  0 8px 10px -5px rgba(8, 55, 255, 0.2); */
+  /* transition: all 0.2s cubic-bezier(0.4, 0, 1, 1),
+  background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: all .2s;
 }
 #contact .contact_form:hover{
-  background-image: linear-gradient(to right, rgb(50, 51, 102) , rgb(101, 67, 111));
-  color: #fff;
+  /* background-image: linear-gradient(to right, rgb(50, 51, 102) , rgb(101, 67, 111)); */
+  /* background-image: linear-gradient(to right, rgb(50, 51, 102) , rgb(232, 210, 143)); */
+  /* color: rgb(232, 210, 143); */
+  color: rgb(146, 195, 216);
   transform: translate3d(0, -3px, 0);
-  box-shadow: 0 14px 16px -11px rgba(19, 33, 80, 0.42),
+  /* box-shadow: 0 14px 16px -11px rgba(19, 33, 80, 0.42),
   0 12px 14px 2px rgba(0, 0, 0, 0.12),
-  0 8px 10px -5px rgba(28, 59, 117, 0.2)
+  0 8px 10px -5px rgba(28, 59, 117, 0.2) */
 }
 
 
 /* 푸터====================================================================== */
 footer{
+  position: relative;
   height: 150px;
-  background: #f6f6f6;
+  background: rgba(208, 215, 223, 0.19);
   color: #777;
   font-size: 13px;
   text-align: center;
 }
-footer .container{height: 100%;padding: 40px;margin-bottom: 0;}
+footer .container{
+  height: 100%;
+  padding: 40px;
+  margin-bottom: 0;
+}
 footer .sns{
   position: absolute;
-  top: 20px;left: 50%;
-  transform: translateX(-50%);
+  bottom: 0;
+  left: 0;
 }
-.sns li{float: left;width: 33.3%;}
-.sns li a img{border-radius: 30px;}
-.sns li a img:hover{transform: translate3d(0,-10px,0);}
+.sns li{
+  float: left;
+  padding: 10px 20px;
+}
+.sns li a{
+  color: black;
+}
+/* .sns li a img{border-radius: 30px;} */
+/* .sns li a img:hover{transform: translate3d(0,-10px,0);} */
 footer small{
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   padding-bottom: 10px;
@@ -688,23 +788,34 @@ footer small{
 
 
 
+/* ============================================================================ */
+/* 미디어쿼리 ==================================================================== */
+/* ============================================================================ */
 
+/* 태블릿 start */
+@media (min-width:768px) and (max-width:1080px) {
+  header .nav ul{
+    /* width: 450px; */
+  }
+  header .nav ul li{
+    /* padding:0; */
+  }
 
+  #skill{
+    height: 600px;
+  }
+  .hover_wrap .skill_border{
+    height: 350px;
+  }
 
+  .verticalTxt{
+    display: none;
+  }
+}
+/* 태블릿 end */
 
-
-
-
-
-
-
-
-
-/* mobile ====================================================================*/
+/* 모바일 start */
 @media (max-width:767px) {
-
-/* main */
-  /* header */
   header{
     position: fixed;
     width: 100%;
@@ -718,89 +829,115 @@ footer small{
     height: 70px;
     line-height: 1.5;
     background-color: rgb(255, 254, 254);
-    transition: background-color 1s ease;}
-  header .logo{text-align: center;}
-  header .logo a{font-size: 14px;color: gray;}
-  header .container h1.logo a{float: none;}
+    transition: background-color 1s ease;
+  }
+  header .logo{
+    text-align: center;
+  }
+  header .logo a{
+    /* font-size: 14px; */
+    color: gray;
+    /* float: none; */
+  }
+  header .container h1.logo a{
+    float: none;
+  }
+  header .nav{
+  right: -202px;
+  margin-top: -10px;
+  z-index: 10;
+  position: fixed;
+  height: 100%;
+  background: #424242;
+  overflow: visible;
+  transition: all 0.5s;
+  }
+  .nav.on{
+    right: 0;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
 
-   /* nivigation */
-   header .nav{
-    right: -202px;
-    margin-top: -10px;
-    z-index: 10;
-    position: fixed;
-    height: 100%;
-    background: #424242;
-    overflow: visible;
-    transition: all 0.5s;
-   }
-   .nav.on{
-     right: 0;
-     box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+  }
+  .nav button{
+    display: block !important;
+    position: absolute;
+    left: -45px;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    padding: 15px 15px 5px 5px;
+    background: none;
+    color: #000;
+    border: 0;
+  }
+  .nav ul{
+    width: 200px;
+    padding-top: 70px;
+  }
+  header .nav ul li{
+    padding-bottom: 10px;
+  }
+  header .nav ul li a{padding: 0 50px;}
+  header .nav ul li a.active{color: #fff;}
+  header .nav ul li a.active::after, header .nav ul li a.active::before{
+    border-color: #fff;
+  }
+  
+  section .box{
+    margin-top: 0;}
+  section .box:nth-child(6){
+    margin-top: -100px;height: 550px;
+  }
 
-   }
-   .nav button{
-     display: block !important;
-     position: absolute;
-     left: -45px;
-     width: 50px;
-     height: 50px;
-     font-size: 2em;
-     padding: 15px 15px 5px 5px;
-     background: none;
-     color: #000;
-     border: 0;
-   }
-   .nav ul{
-     width: 200px;
-     padding-top: 70px;
-   }
-   header .nav ul li{
-     padding-bottom: 10px;
-   }
-   header .nav ul li a{padding: 0 50px;}
-   header .nav ul li a.active{color: #fff;}
-   header .nav ul li a.active::after, header .nav ul li a.active::before{
-     border-color: #fff;
-   }
+  .container > h2 a{
+    position: relative;display: inline-block;flex: 1;
+    background: #f3f377;color: #000;
+    background-size: 0 100%;background-repeat: no-repeat;
+    background-position: 0 0.1em;
+  }
 
-
-/* section */
-section .box{margin-top: 0;}
-section .box:nth-child(6){margin-top: -100px;height: 550px;}
-
-.container > h2 a{position: relative;display: inline-block;flex: 1;
-  background: #f3f377;color: #000;
-  background-size: 0 100%;background-repeat: no-repeat;
-  background-position: 0 0.1em;}
-
-
-/* slide */
   body > section{margin-top: -56px;}
-   #slide .main_slide{height: 500px;}
-   .swiper-wrapper{height: 200px;}
-   .slide_logo{margin-left: 10px;}
-   .main_slide .slide_two .slide_logo img:nth-child(1),
-   .main_slide .slide_two .slide_logo img:nth-child(2),
-   .main_slide .slide_two .slide_logo img:nth-child(3),
-   .main_slide .slide_two .slide_logo img:nth-child(6),
-   .main_slide .slide_two .slide_logo img:nth-child(7){width: 50px;}
-   .main_slide .slide_two .slide_logo img:nth-child(4){margin-left: 10px;}
-   .main_slide .slide_two .slide_logo img:nth-child(6){margin-left: 60px;}
-   .main_slide .slide_two .slide_logo img{margin-bottom: 0;}
-   .button_link2{width: 200px;left: 220px;}
-   .swiper-slide.swiper-slide-active .button_link2{left: 250px;}
-   .button_link2 a{font-size: 14px;border:0;}
+  #slide .main_slide{height: 500px;}
+  .swiper-wrapper{height: 200px;}
+  .slide_logo{margin-left: 10px;}
+  .main_slide .slide_two .slide_logo img:nth-child(1),
+  .main_slide .slide_two .slide_logo img:nth-child(2),
+  .main_slide .slide_two .slide_logo img:nth-child(3),
+  .main_slide .slide_two .slide_logo img:nth-child(6),
+  .main_slide .slide_two .slide_logo img:nth-child(7){width: 50px;}
+  .main_slide .slide_two .slide_logo img:nth-child(4){margin-left: 10px;}
+  .main_slide .slide_two .slide_logo img:nth-child(6){margin-left: 60px;}
+  .main_slide .slide_two .slide_logo img{margin-bottom: 0;}
+  .button_link2{width: 200px;left: 220px;}
+  .swiper-slide.swiper-slide-active .button_link2{left: 250px;}
+  .button_link2 a{font-size: 14px;border:0;}
 
-/* about */
-   .about_img{height: auto;}
-   .aboutext_wrap{position: unset !important;top: 0 !important;}
-   .about_button{padding: 0;}
+  /* about */
+  .about_img{
+    height: auto;
+  }
+  .aboutext_wrap{
+    /* position: unset !important; */
+    /* top: 0 !important; */
+  }
+  .about_button{
+    padding: 0;
+  }
 
-/* skill */
-   section .box:nth-child(3){height: auto;}
+  /* skill */
+  #skill{
+  height: 1000px;
+  }
+  .hover_wrap{
+  width: 100%;
+  clear: both;
+  }
 
-/* workprocess */
+
+  section .box:nth-child(3){
+    height: auto;
+  }
+
+  /* workprocess */
    section .box:nth-child(4){height: auto;}
    #workprocess .container div.row{margin-bottom: 50px;}
 
@@ -809,7 +946,7 @@ section .box:nth-child(6){margin-top: -100px;height: 550px;}
   .swiper-button-next, .swiper-container-rtl .swiper-button-prev{top: 70%!important;}
   .swiper-button-prev, .swiper-container-rtl .swiper-button-next{top: 70%!important;}
 
-  /* contact    */
+  /* contact */
   .contact_info{padding-top: 15px;margin-bottom: 120px;}
   .contact_info p{font-size: 13px;}
   .contact_info p:nth-child(1){letter-spacing: 0px;}
@@ -819,16 +956,8 @@ section .box:nth-child(6){margin-top: -100px;height: 550px;}
   .contact_info ul li:nth-child(1){margin-right: 0;}
 
   .contact_form a{width: 300px;}
-
 }
-
-
-
-/* 태블릿 ====================================================================*/
-@media (min-width:768px) {
-  header .nav ul{width: 450px;}
-  header .nav ul li{padding:0;}
-}
+/* 모바일 end */
 
 
 
