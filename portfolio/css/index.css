@@ -314,7 +314,6 @@ section .box:nth-child(1){
 }
 #about{
   position: relative;
-  height: 500px;
 }
 #about .container .smtxt{
   font-size: 14px;
@@ -598,7 +597,6 @@ footer{
 /* work =======================================================================*/
 #work{
   position: relative;
-  height: 500px;
 }
 /* 작업물 백그라운드로 넣기 */
 #work .work_one{background-image: url(../images/F&B.png) !important;
@@ -893,6 +891,10 @@ footer small{
     background: #f3f377;color: #000;
     background-size: 0 100%;background-repeat: no-repeat;
     background-position: 0 0.1em;
+  }
+
+  .verticalTxt{
+    display: none;
   }
 
   body > section{margin-top: -56px;}
